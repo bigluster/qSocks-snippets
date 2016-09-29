@@ -1,0 +1,71 @@
+{
+    "qsocks.": {
+        "prefix": "qsocks.",
+        "body": [
+            "qsocks.Connect(${1:config}).then(function(${2:global}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.config": {
+        "prefix": "qsocks.config",
+        "body": [
+            "qsocks.Connect(${1:config}).then(function(${2:global}) {\n\n});"
+        ],
+        "description": "var config = {\n\t cfg.mark = '';\n\t cfg.port = ;\n\t cfg.appname = '';\n\t cfg.host = '';\n\t cfg.prefix = ;\n\t cfg.origin = '';\n\t cfg.isSecure = true|false;\n\t cfg.rejectUnauthorized = true|false;\n\t cfg.headers = ''|{};\n\t cfg.ticket = ''|false;\n\t cfg.key = ''|null;\n\t cfg.cert = ''|null;\n\t cfg.ca = ''|null;\n\t cfg.pfx = ''|null;\n\t cfg.passphrase = ''|null;\n\t cfg.identity = '';\n\t cfg.debug = true|false;\n\t cfg.disconnect = '';\n}"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "qsocks.Connect": {
+        "prefix": "qsocks.Connect",
+        "body": [
+            "qsocks.Connect(${1:config}).then(function(${2:global}) {\n\n});"
+        ],
+        "description": "Initialize qSocks connection"
+    },
+    "qsocks.getDocList": {
+        "prefix": "qsocks.global.getDocList",
+        "body": [
+            "global.getDocList().then(function (doclist) {\n\t//console.log(doclist);\n\tfor (var i = 0; i < docList.length; i++) {\n\t\tvar doc = docList[i];\n\t\t//console.log(doc);\n\t}\n});"
+        ],
+        "description": "Get all documents"
+    },
+    "qsocks.openDoc": {
+        "prefix": "qsocks.global.openDoc",
+        "body": [
+            "${1:global}.openDoc(${2:'docName'}).then(function(${3:app}) {\n\n});"
+        ],
+        "description": "Open app"
+    },
+    "qsocks.createApp": {
+        "prefix": "qsocks.global.createApp",
+        "body": [
+            "${1:global}.createApp(${1:'appName'}).then(function(${2:app}) {\n\n});"
+        ],
+        "description": "Create empty app"
+    },
+    "qsocks.createSessionApp": {
+        "prefix": "qsocks.global.createSessionApp",
+        "body": [
+            "${1:global}.createSessionApp().then(function(${2:sessionApp}) {\n\n});"
+        ],
+        "description": "Create empty session app"
+    },
+    "qsocks.createSessionAppFromApp": {
+        "prefix": "qsocks.global.createSessionAppFromApp",
+        "body": [
+            "${1:global}.createSessionAppFromApp(${1:'appNameOrID'}).then(function(${2:sessionApp}) {\n\t\n});"
+        ],
+        "description": "Create session app from existing app"
+    }
+}

@@ -1,0 +1,40 @@
+{
+	"name": "qsockssnippet",
+	"displayName": "qSocksSnippet",
+	"description": "qSocks Snippets for VS Code",
+	"version": "0.0.1",
+	"publisher": "stefanstoichev",
+	"homepage": "https://github.com/countnazgul/qSocks-snippets",
+	"icon": "images/icon.svg",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/countnazgul/qSocks-snippets"
+	},
+	"license": "MIT",
+	"keywords": [
+		"Javascript",
+		"qSocks",
+		"Snippet"
+	],
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"activationEvents": [
+		"onLanguage:javascript"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/qsocks.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	}
+}
