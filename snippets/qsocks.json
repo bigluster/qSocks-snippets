@@ -1,11 +1,4 @@
 {
-    "qsocks.": {
-        "prefix": "qsocks.",
-        "body": [
-            "qsocks.Connect(${1:config}).then(function(${2:global}) {\n\n});"
-        ],
-        "description": ""
-    },
     "qsocks.configFull": {
         "prefix": "qsocks.configFull",
         "body": [
@@ -33,40 +26,341 @@
             "qsocks.ConnectOpenApp({\n\tappname: '${1:appName}'\n});"
         ],
         "description": "Connect and open app"
-    },    
+    },
+    "qsocks.global.abortAll": {
+        "prefix": "qsocks.abortAll",
+        "body": [
+            "${1:global}.abortAll().then(function(${3:app}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.global.getProgress": {
+        "prefix": "qsocks.global.getProgress",
+        "body": [
+            "${1:global}.getProgress(${2:'RequestId'}).then(function(${3:progress}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.global.openDoc": {
+        "prefix": "qsocks.global.openDoc",
+        "body": [
+            "${1:global}.openDoc(${2:'DocName'}, ${3:'UserName'}, ${4:'Password'}, ${5:'Serial'}, ${6:'NoData'}).then(function(${7:doc}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.global.oSName": {
+        "prefix": "qsocks.global.oSName",
+        "body": [
+            "${1:global}.oSName().then(function(${3:oSName}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.global.qTProduct": {
+        "prefix": "qsocks.global.qTProduct",
+        "body": [
+            "${1:global}.qTProduct().then(function(${3:product}) {\n\n});"
+        ],
+        "description": ""
+    },
     "qsocks.getDocList": {
         "prefix": "qsocks.global.getDocList",
         "body": [
-            "global.getDocList().then(function (doclist) {\n\t//console.log(doclist);\n\tfor (var i = 0; i < docList.length; i++) {\n\t\tvar doc = docList[i];\n\t\t//console.log(doc);\n\t}\n});"
+            "${1:global}.getDocList().then(function(${3:docList}) {\n\n});"
         ],
-        "description": "Get all documents"
+        "description": ""
     },
-    "qsocks.openDoc": {
-        "prefix": "qsocks.global.openDoc",
+    "qsocks.getInteract": {
+        "prefix": "qsocks.global.getInteract",
         "body": [
-            "${1:global}.openDoc(${2:'docName'}).then(function(${3:app}) {\n\n});"
+            "${1:global}.getInteract(${2:'RequestId'}).then(function(${3:interact}) {\n\n});"
         ],
-        "description": "Open app"
+        "description": ""
+    },
+    "qsocks.getUniqueID": {
+        "prefix": "qsocks.global.getUniqueID",
+        "body": [
+            "${1:global}.getUniqueID().then(function(${3:uniqueID}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.interactDone": {
+        "prefix": "qsocks.global.interactDone",
+        "body": [
+            "${1:global}.interactDone(${2:'RequestId'}, ${2:'Def'}).then(function(${4:interact}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getAuthenticatedUser": {
+        "prefix": "qsocks.global.getAuthenticatedUser",
+        "body": [
+            "${1:global}.getAuthenticatedUser().then(function(${3:authenticatedUser}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getStreamList": {
+        "prefix": "qsocks.global.getStreamList",
+        "body": [
+            "${1:global}.getStreamList().then(function(${3:streamList}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.createDocEx": {
+        "prefix": "qsocks.global.createDocEx",
+        "body": [
+            "${1:global}.createDocEx(${2:'DocName'}, ${3:'UserName'}, ${4:'Password'}, ${5:'Serial'}, ${6:'LocalizedScriptMainSection'}).then(function(${7:docEx}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getActiveDoc": {
+        "prefix": "qsocks.global.getActiveDoc",
+        "body": [
+            "${1:global}.getActiveDoc().then(function(${3:activeDoc}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.allowCreateApp": {
+        "prefix": "qsocks.global.allowCreateApp",
+        "body": [
+            "${1:global}.allowCreateApp(${2:'docName'}).then(function(${3:allowCreateApp}) {\n\n});"
+        ],
+        "description": ""
     },
     "qsocks.createApp": {
         "prefix": "qsocks.global.createApp",
         "body": [
-            "${1:global}.createApp(${1:'appName'}).then(function(${2:app}) {\n\n});"
+            "${1:global}.createApp(${2:'AppName'}, ${3:'LocalizedScriptMainSection'}).then(function(${4:app}) {\n\n});"
         ],
-        "description": "Create empty app"
+        "description": ""
     },
     "qsocks.createSessionApp": {
         "prefix": "qsocks.global.createSessionApp",
         "body": [
-            "${1:global}.createSessionApp().then(function(${2:sessionApp}) {\n\n});"
+            "${1:global}.createSessionApp().then(function(${3:sessionApp}) {\n\n});"
         ],
-        "description": "Create empty session app"
+        "description": ""
     },
     "qsocks.createSessionAppFromApp": {
         "prefix": "qsocks.global.createSessionAppFromApp",
         "body": [
-            "${1:global}.createSessionAppFromApp(${1:'appNameOrID'}).then(function(${2:sessionApp}) {\n\t\n});"
+            "${1:global}.createSessionAppFromApp(${2:'qSrcAppId'}).then(function(${3:sessionApp}) {\n\n});"
         ],
-        "description": "Create session app from existing app"
+        "description": ""
+    },
+    "qsocks.deleteApp": {
+        "prefix": "qsocks.global.deleteApp",
+        "body": [
+            "${1:global}.deleteApp(${2:'AppId'}, ${3:'FilePath'}).then(function(${4:delete}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.isDesktopMode": {
+        "prefix": "qsocks.global.isDesktopMode",
+        "body": [
+            "${1:global}.isDesktopMode().then(function(${3:isDesktopMode}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.allowEditMode": {
+        "prefix": "qsocks.global.allowEditMode",
+        "body": [
+            "${1:global}.allowEditMode().then(function(${3:allowEditMode}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getListOfFunctions": {
+        "prefix": "qsocks.global.getListOfFunctions",
+        "body": [
+            "${1:global}.getListOfFunctions(${2:'Group'}).then(function(${3:functionsList}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getBNF": {
+        "prefix": "qsocks.global.getBNF",
+        "body": [
+            "${1:global}.getBNF(${2:'getBNF'}).then(function(${3:BNF}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getLogicalDriveStrings": {
+        "prefix": "qsocks.global.getLogicalDriveStrings",
+        "body": [
+            "${1:global}.getLogicalDriveStrings().then(function(${3:logicalDriveStrings}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getSupportedCodePages": {
+        "prefix": "qsocks.global.getSupportedCodePages",
+        "body": [
+            "${1:global}.getSupportedCodePages().then(function(${3:supportedCodePages}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getOdbcDsns": {
+        "prefix": "qsocks.global.getOdbcDsns",
+        "body": [
+            "${1:global}.getOdbcDsns().then(function(${3:OdbcDsns}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getOleDbProviders": {
+        "prefix": "qsocks.global.getOleDbProviders",
+        "body": [
+            "${1:global}.getOleDbProviders().then(function(${3:OleDbProviders}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getDatabasesFromConnectStatement": {
+        "prefix": "qsocks.global.getDatabasesFromConnectStatement",
+        "body": [
+            "${1:global}.getDatabasesFromConnectStatement(${2:'ConnectionString'}, ${3:'UserName'}, ${4:'Password'}).then(function(${5:databasesConnectStatement}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getCustomConnectors": {
+        "prefix": "qsocks.global.getCustomConnectors",
+        "body": [
+            "${1:global}.getCustomConnectors(${2:'ReloadList'}).then(function(${3:customConnectors}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.cancelReload": {
+        "prefix": "qsocks.global.cancelReload",
+        "body": [
+            "${1:global}.cancelReload().then(function(${3:cancelReload}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.cancelRequest": {
+        "prefix": "qsocks.global.cancelRequest",
+        "body": [
+            "${1:global}.cancelRequest(${2:'RequestId'}).then(function(${3:cancelRequest}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.configureReload": {
+        "prefix": "qsocks.global.configureReload",
+        "body": [
+            "${1:global}.configureReload(${2:'CancelOnScriptError'}, ${3:'UseErrorData'}, ${4:'InteractOnError'}).then(function(${5:configureReload}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.shutdownProcess": {
+        "prefix": "qsocks.global.shutdownProcess",
+        "body": [
+            "${1:global}.shutdownProcess().then(function(${3:shutdownProcess}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.reloadExtensionList": {
+        "prefix": "qsocks.global.reloadExtensionList",
+        "body": [
+            "${1:global}.reloadExtensionList().then(function(${3:reloadExtensionList}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getDefaultAppFolder": {
+        "prefix": "qsocks.global.getDefaultAppFolder",
+        "body": [
+            "${1:global}.getDefaultAppFolder().then(function(${3:defaultAppFolder}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getFolderItemsForPath": {
+        "prefix": "qsocks.global.getFolderItemsForPath",
+        "body": [
+            "${1:global}.getFolderItemsForPath(${2:'Path'}).then(function(${3:folderItemsForPath}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getFunctions": {
+        "prefix": "qsocks.global.getFunctions",
+        "body": [
+            "${1:global}.getFunctions(${2:'Group'}).then(function(${3:functions}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.copyApp": {
+        "prefix": "qsocks.global.copyApp",
+        "body": [
+            "${1:global}.copyApp(${2:'TargetAppId'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:app}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.importApp": {
+        "prefix": "qsocks.global.importApp",
+        "body": [
+            "${1:global}.importApp(${2:'AppId'}, ${3:'SrcPath'}, ${4:'Ids'}).then(function(${5:import}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.importAppEx": {
+        "prefix": "qsocks.global.importAppEx",
+        "body": [
+            "${1:global}.importAppEx(${2:'AppId'}, ${3:'SrcPath'}, ${4:'Ids'}, ${5:'qExcludeConnections'}).then(function(${6:importEx}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.exportApp": {
+        "prefix": "qsocks.global.exportApp",
+        "body": [
+            "${1:global}.exportApp(${2:'TargetPath'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:export}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.replaceAppFromID": {
+        "prefix": "qsocks.global.replaceAppFromID",
+        "body": [
+            "${1:global}.replaceAppFromID(${2:'TargetAppId'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:replaceApp}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.isValidConnectionString": {
+        "prefix": "qsocks.global.isValidConnectionString",
+        "body": [
+            "${1:global}.isValidConnectionString(${2:'Connection'}).then(function(${3:isValidConnectionString}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.oSVersion": {
+        "prefix": "qsocks.global.oSVersion",
+        "body": [
+            "${1:global}.oSVersion().then(function(${3:oSVersion}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.getAppEntry": {
+        "prefix": "qsocks.global.getAppEntry",
+        "body": [
+            "${1:global}.getAppEntry(${2:'AppId'}).then(function(${3:appEntry}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.productVersion": {
+        "prefix": "qsocks.global.productVersion",
+        "body": [
+            "${1:global}.productVersion().then(function(${3:productVersion}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.isPersonalMode": {
+        "prefix": "qsocks.global.isPersonalMode",
+        "body": [
+            "${1:global}.isPersonalMode().then(function(${3:isPersonalMode}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.replaceAppFromPath": {
+        "prefix": "qsocks.global.replaceAppFromPath",
+        "body": [
+            "${1:global}.replaceAppFromPath(${2:'TargetAppId'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:replaceAppFromPath}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.qvVersion": {
+        "prefix": "qsocks.global.qvVersion",
+        "body": [
+            "${1:global}.qvVersion().then(function(${3:version}) {\n\n});"
+        ],
+        "description": ""
     }
 }
