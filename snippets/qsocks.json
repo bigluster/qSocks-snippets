@@ -362,5 +362,124 @@
             "${1:global}.qvVersion().then(function(${3:version}) {\n\n});"
         ],
         "description": ""
+    },
+    "qsocks.field.getCardinal": {
+        "prefix": "qsocks.field.getCardinal",
+        "body": [
+            "${1:field}.getCardinal().then(function(${3:cardinal}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.getAndMode": {
+        "prefix": "qsocks.field.getAndMode",
+        "body": [
+            "${1:field}.getAndMode().then(function(${3:andMode}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.setAndMode": {
+        "prefix": "qsocks.field.setAndMode",
+        "body": [
+            "${1:field}.setAndMode(${2:'AndMode'}).then(function(${3:andMode}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.lowLevelSelect": {
+        "prefix": "qsocks.field.lowLevelSelect",
+        "body": [
+            "${1:field}.lowLevelSelect(${2:'Values'}, ${3:'ToggleMode'}, ${4:'SoftLock'}).then(function(${5:lowLevelSelect}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.select": {
+        "prefix": "qsocks.field.select",
+        "body": [
+            "${1:field}.select(${2:'Match'}, ${3:'SoftLock'}, ${4:'ExcludedValuesMode'}).then(function(${5:select}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.toggleSelect": {
+        "prefix": "qsocks.field.toggleSelect",
+        "body": [
+            "${1:field}.toggleSelect(${2:'Match'}, ${3:'SoftLock'}, ${4:'ExcludedValuesMode'}).then(function(${5:toggleSelect}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.clearAllButThis": {
+        "prefix": "qsocks.field.clearAllButThis",
+        "body": [
+            "${1:field}.clearAllButThis(${2:'SoftLock'}).then(function(${3:clearAllButThis}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.selectPossible": {
+        "prefix": "qsocks.field.selectPossible",
+        "body": [
+            "${1:field}.selectPossible(${2:'SoftLock'}).then(function(${3:selectPossible}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.selectExcluded": {
+        "prefix": "qsocks.field.selectExcluded",
+        "body": [
+            "${1:field}.selectExcluded(${2:'SoftLock'}).then(function(${3:selectExcluded}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.selectAll": {
+        "prefix": "qsocks.field.selectAll",
+        "body": [
+            "${1:field}.selectAll(${2:'SoftLock'}).then(function(${3:selectAll}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.selectValues": {
+        "prefix": "qsocks.field.selectValues",
+        "body": [
+            "${1:field}.selectValues(${2:'FieldValues'}, ${2:'Toggle'} ${2:'SoftLock'}).then(function(${5:values}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.clear": {
+        "prefix": "qsocks.field.clear",
+        "body": [
+            "${1:field}.clear().then(function(${3:clear}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.lock": {
+        "prefix": "qsocks.field.lock",
+        "body": [
+            "${1:field}.lock().then(function(${3:lock}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.unlock": {
+        "prefix": "qsocks.field.unlock",
+        "body": [
+            "${1:field}.unlock().then(function(${3:unlock}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.selectAlternative": {
+        "prefix": "qsocks.field.selectAlternative",
+        "body": [
+            "${1:field}.selectAlternative(${2:'SoftLock'}).then(function(${3:selectAlternative}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.getNxProperties": {
+        "prefix": "qsocks.field.getNxProperties",
+        "body": [
+            "${1:field}.getNxProperties().then(function(${3:NxProperties}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.field.setNxProperties": {
+        "prefix": "qsocks.field.setNxProperties",
+        "body": [
+            "${1:field}.setNxProperties(${2:'Properties'}).then(function(${3:NxProperties}) {\n\n});"
+        ],
+        "description": ""
     }
 }
