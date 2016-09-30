@@ -6,26 +6,20 @@
         ],
         "description": ""
     },
-    "qsocks.config": {
-        "prefix": "qsocks.config",
+    "qsocks.configFull": {
+        "prefix": "qsocks.configFull",
         "body": [
-            "qsocks.Connect(${1:config}).then(function(${2:global}) {\n\n});"
+            "var ${1:config} = {\n\tmark: '',\n\tport: 4848,\n\tappname: '',\n\thost: '',\n\tprefix: '',\n\torigin: '',\n\tisSecure: true|false,\n\trejectUnauthorized: true|false,\n\theaders: ''|{},\n\tticket: ''|false,\n\tkey: ''|null,\n\tcert: ''|null,\n\tca: ''|null,\n\tpfx: ''|null,\n\tpassphrase: ''|null,\n\tidentity: '',\n\tdebug: true|false,\n\tdisconnect: ''\n}"
         ],
-        "description": "var config = {\n\t cfg.mark = '';\n\t cfg.port = ;\n\t cfg.appname = '';\n\t cfg.host = '';\n\t cfg.prefix = ;\n\t cfg.origin = '';\n\t cfg.isSecure = true|false;\n\t cfg.rejectUnauthorized = true|false;\n\t cfg.headers = ''|{};\n\t cfg.ticket = ''|false;\n\t cfg.key = ''|null;\n\t cfg.cert = ''|null;\n\t cfg.ca = ''|null;\n\t cfg.pfx = ''|null;\n\t cfg.passphrase = ''|null;\n\t cfg.identity = '';\n\t cfg.debug = true|false;\n\t cfg.disconnect = '';\n}"
+        "description": "Full Config JSON Object"
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
+    "qsocks.configShort": {
+        "prefix": "qsocks.configShort",
+        "body": [
+            "var ${1:config} = {\n\thost: '',\n\tisSecure: true|false,\n\tappname: ''|null\n};"
+        ],
+        "description": "Short Config JSON Object"
+    },
     "qsocks.Connect": {
         "prefix": "qsocks.Connect",
         "body": [
@@ -33,6 +27,13 @@
         ],
         "description": "Initialize qSocks connection"
     },
+    "qsocks.ConnectOpenApp": {
+        "prefix": "qsocks.ConnectOpenApp",
+        "body": [
+            "qsocks.ConnectOpenApp({\n\tappname: '${1:appName}'\n});"
+        ],
+        "description": "Connect and open app"
+    },    
     "qsocks.getDocList": {
         "prefix": "qsocks.global.getDocList",
         "body": [
