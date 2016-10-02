@@ -2,10 +2,10 @@
 	"name": "qsockssnippet",
 	"displayName": "qSocksSnippet",
 	"description": "qSocks Snippets for VS Code",
-	"version": "0.0.1",
+	"version": "0.0.8",
 	"publisher": "stefanstoichev",
 	"homepage": "https://github.com/countnazgul/qSocks-snippets",
-	"icon": "images/icon.svg",
+	"icon": "images/branch_logo.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/countnazgul/qSocks-snippets"
