@@ -538,40 +538,130 @@
         ],
         "description": "Unpublishes a bookmark."
     },
+    "qsocks.dimension.getLayout": {
+        "prefix": "qsocks.dimension.getLayout",
         "body": [
+            "${1:dimension}.getLayout().then(function(${3:layout}) {\n\n});"
         ],
         "description": "Evaluates a dimension and displays its properties, including the dynamic properties."
     },
+    "qsocks.dimension.applyPatches": {
+        "prefix": "qsocks.dimension.applyPatches",
         "body": [
+            "${1:dimension}.applyPatches(${2:'Patches'}).then(function(${3:patches}) {\n\n});"
         ],
         "description": "Applies a patch to the properties of an object. Allows an update to some of the properties."
     },
+    "qsocks.dimension.setProperties": {
+        "prefix": "qsocks.dimension.setProperties",
         "body": [
+            "${1:dimension}.setProperties(${2:'Prop'}).then(function(${3:properties}) {\n\n});"
         ],
         "description": "Sets some properties for a dimension."
     },
+    "qsocks.dimension.getProperties": {
+        "prefix": "qsocks.dimension.getProperties",
         "body": [
+            "${1:dimension}.getProperties().then(function(${3:properties}) {\n\n});"
         ],
         "description": "Shows the properties of an object."
     },
+    "qsocks.dimension.getInfo": {
+        "prefix": "qsocks.dimension.getInfo",
         "body": [
+            "${1:dimension}.getInfo().then(function(${3:info}) {\n\n});"
         ],
         "description": "Returns the type and identifier of the object."
     },
+    "qsocks.dimension.getDimension": {
+        "prefix": "qsocks.dimension.getDimension",
         "body": [
+            "${1:dimension}.getDimension().then(function(${3:dimension}) {\n\n});"
         ],
         "description": "Returns the definition of a dimension."
     },
+    "qsocks.dimension.getLinkedObjects": {
+        "prefix": "qsocks.dimension.getLinkedObjects",
         "body": [
+            "${1:dimension}.getLinkedObjects().then(function(${3:linkedObjects}) {\n\n});"
         ],
         "description": "Lists the linked objects to a generic object, a dimension or a measure."
     },
+    "qsocks.dimension.publish": {
+        "prefix": "qsocks.dimension.publish",
         "body": [
+            "${1:dimension}.publish().then(function(${3:publish}) {\n\n});"
         ],
         "description": "Publishes a dimension."
     },
+    "qsocks.dimension.unPublish": {
+        "prefix": "qsocks.dimension.unPublish",
         "body": [
+            "${1:dimension}.unPublish().then(function(${3:unPublish}) {\n\n});"
         ],
         "description": "Unpublishes a dimension."
-    }
+    },
+    "qsocks.measure.getLayout": {
+        "prefix": "qsocks.measure.getLayout",
+        "body": [
+            "${1:measure}.getLayout().then(function(${3:layout}) {\n\n});"
+        ],
+        "description": "Evaluates a measure and displays its properties, including the dynamic properties."
+    },
+    "qsocks.measure.applyPatches": {
+        "prefix": "qsocks.measure.applyPatches",
+        "body": [
+            "${1:measure}.applyPatches(${2:'Patches'}).then(function(${3:patches}) {\n\n});"
+        ],
+        "description": "Applies a patch to the properties of an object. Allows an update to some of the properties."
+    },
+    "qsocks.measure.setProperties": {
+        "prefix": "qsocks.measure.setProperties",
+        "body": [
+            "${1:measure}.setProperties(${2:'Prop'}).then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Sets some properties for a measure."
+    },
+    "qsocks.measure.getProperties": {
+        "prefix": "qsocks.measure.getProperties",
+        "body": [
+            "${1:measure}.getProperties().then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Shows the properties of an object."
+    },
+    "qsocks.measure.getInfo": {
+        "prefix": "qsocks.measure.getInfo",
+        "body": [
+            "${1:measure}.getInfo().then(function(${3:info}) {\n\n});"
+        ],
+        "description": "Returns the type and identifier of the object."
+    },
+    "qsocks.measure.getMeasure": {
+        "prefix": "qsocks.measure.getMeasure",
+        "body": [
+            "${1:measure}.getMeasure().then(function(${3:measure}) {\n\n});"
+        ],
+        "description": "Returns the definition of a measure."
+    },
+    "qsocks.measure.getLinkedObjects": {
+        "prefix": "qsocks.measure.getLinkedObjects",
+        "body": [
+            "${1:measure}.getLinkedObjects().then(function(${3:linkedObjects}) {\n\n});"
+        ],
+        "description": "Lists the linked objects to a generic object, a measure or a measure."
+    },
+    "qsocks.measure.publish": {
+        "prefix": "qsocks.measure.publish",
+        "body": [
+            "${1:measure}.publish().then(function(${3:publish}) {\n\n});"
+        ],
+        "description": "Publishes a measure."
+    },
+    "qsocks.measure.unPublish": {
+        "prefix": "qsocks.measure.unPublish",
+        "body": [
+            "${1:measure}.unPublish().then(function(${3:unPublish}) {\n\n});"
+        ],
+        "description": "Unpublishes a measure."
+    },
 }
