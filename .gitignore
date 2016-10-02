@@ -2,3 +2,4 @@ test.js
 .vscode/launch.json
 .vsixmanifest
 .vscode/tasks.json
+*.vsix
