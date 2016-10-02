@@ -32,133 +32,133 @@
         "body": [
             "${1:global}.abortAll().then(function(${3:app}) {\n\n});"
         ],
-        "description": ""
+        "description": "Sets an abort flag on all pending and ongoing requests in the current engine session."
     },
     "qsocks.global.getProgress": {
         "prefix": "qsocks.global.getProgress",
         "body": [
             "${1:global}.getProgress(${2:'RequestId'}).then(function(${3:progress}) {\n\n});"
         ],
-        "description": ""
+        "description": "Gives information about the progress of the DoReload and DoSave calls."
     },
     "qsocks.global.openDoc": {
         "prefix": "qsocks.global.openDoc",
         "body": [
             "${1:global}.openDoc(${2:'DocName'}, ${3:'UserName'}, ${4:'Password'}, ${5:'Serial'}, ${6:'NoData'}).then(function(${7:doc}) {\n\n});"
         ],
-        "description": ""
+        "description": "Opens an app and checks if the app needs to be migrated (if the app is deprecated)."
     },
     "qsocks.global.oSName": {
         "prefix": "qsocks.global.oSName",
         "body": [
             "${1:global}.oSName().then(function(${3:oSName}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the name of the operating system."
     },
     "qsocks.global.qTProduct": {
         "prefix": "qsocks.global.qTProduct",
         "body": [
             "${1:global}.qTProduct().then(function(${3:product}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the Qlik product name."
     },
     "qsocks.getDocList": {
         "prefix": "qsocks.global.getDocList",
         "body": [
             "${1:global}.getDocList().then(function(${3:docList}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the list of apps."
     },
     "qsocks.getInteract": {
         "prefix": "qsocks.global.getInteract",
         "body": [
             "${1:global}.getInteract(${2:'RequestId'}).then(function(${3:interact}) {\n\n});"
         ],
-        "description": ""
+        "description": "Retrieves information on the user interaction that is requested by the engine."
     },
     "qsocks.getUniqueID": {
         "prefix": "qsocks.global.getUniqueID",
         "body": [
             "${1:global}.getUniqueID().then(function(${3:uniqueID}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the unique identifier of the endpoint for the current user in the current app."
     },
     "qsocks.interactDone": {
         "prefix": "qsocks.global.interactDone",
         "body": [
             "${1:global}.interactDone(${2:'RequestId'}, ${2:'Def'}).then(function(${4:interact}) {\n\n});"
         ],
-        "description": ""
+        "description": "Informs the engine that a user interaction (which was earlier requested by the engine) was performed and indicates the engine what to do next."
     },
     "qsocks.getAuthenticatedUser": {
         "prefix": "qsocks.global.getAuthenticatedUser",
         "body": [
             "${1:global}.getAuthenticatedUser().then(function(${3:authenticatedUser}) {\n\n});"
         ],
-        "description": ""
+        "description": "Retrieves information about the authenticated user."
     },
     "qsocks.getStreamList": {
         "prefix": "qsocks.global.getStreamList",
         "body": [
             "${1:global}.getStreamList().then(function(${3:streamList}) {\n\n});"
         ],
-        "description": ""
+        "description": "Lists the streams."
     },
     "qsocks.createDocEx": {
         "prefix": "qsocks.global.createDocEx",
         "body": [
             "${1:global}.createDocEx(${2:'DocName'}, ${3:'UserName'}, ${4:'Password'}, ${5:'Serial'}, ${6:'LocalizedScriptMainSection'}).then(function(${7:docEx}) {\n\n});"
         ],
-        "description": ""
+        "description": "Creates an app and opens an engine session."
     },
     "qsocks.getActiveDoc": {
         "prefix": "qsocks.global.getActiveDoc",
         "body": [
             "${1:global}.getActiveDoc().then(function(${3:activeDoc}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the handle of the current app."
     },
     "qsocks.allowCreateApp": {
         "prefix": "qsocks.global.allowCreateApp",
         "body": [
             "${1:global}.allowCreateApp(${2:'docName'}).then(function(${3:allowCreateApp}) {\n\n});"
         ],
-        "description": ""
+        "description": "Indicates whether or not a user is able to create an app."
     },
     "qsocks.createApp": {
         "prefix": "qsocks.global.createApp",
         "body": [
             "${1:global}.createApp(${2:'AppName'}, ${3:'LocalizedScriptMainSection'}).then(function(${4:app}) {\n\n});"
         ],
-        "description": ""
+        "description": "Creates an app."
     },
     "qsocks.createSessionApp": {
         "prefix": "qsocks.global.createSessionApp",
         "body": [
             "${1:global}.createSessionApp().then(function(${3:sessionApp}) {\n\n});"
         ],
-        "description": ""
+        "description": "Creates an empty session app."
     },
     "qsocks.createSessionAppFromApp": {
         "prefix": "qsocks.global.createSessionAppFromApp",
         "body": [
             "${1:global}.createSessionAppFromApp(${2:'qSrcAppId'}).then(function(${3:sessionApp}) {\n\n});"
         ],
-        "description": ""
+        "description": "Creates a session app from a source app."
     },
     "qsocks.deleteApp": {
         "prefix": "qsocks.global.deleteApp",
         "body": [
             "${1:global}.deleteApp(${2:'AppId'}, ${3:'FilePath'}).then(function(${4:delete}) {\n\n});"
         ],
-        "description": ""
+        "description": "Deletes an app from the Qlik Sense repository or from the file system."
     },
     "qsocks.isDesktopMode": {
         "prefix": "qsocks.global.isDesktopMode",
         "body": [
             "${1:global}.isDesktopMode().then(function(${3:isDesktopMode}) {\n\n});"
         ],
-        "description": ""
+        "description": "Indicates whether or not the user works in standalone mode."
     },
     "qsocks.allowEditMode": {
         "prefix": "qsocks.global.allowEditMode",
@@ -179,35 +179,35 @@
         "body": [
             "${1:global}.getBNF(${2:'getBNF'}).then(function(${3:BNF}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns a set of rules defining the Qlik Sense scripting language grammar. These rules define the syntax for the script statements and the script or chart functions."
     },
     "qsocks.getLogicalDriveStrings": {
         "prefix": "qsocks.global.getLogicalDriveStrings",
         "body": [
             "${1:global}.getLogicalDriveStrings().then(function(${3:logicalDriveStrings}) {\n\n});"
         ],
-        "description": ""
+        "description": "Lists the logical drives in the system."
     },
     "qsocks.getSupportedCodePages": {
         "prefix": "qsocks.global.getSupportedCodePages",
         "body": [
             "${1:global}.getSupportedCodePages().then(function(${3:supportedCodePages}) {\n\n});"
         ],
-        "description": ""
+        "description": "Lists the supported code pages."
     },
     "qsocks.getOdbcDsns": {
         "prefix": "qsocks.global.getOdbcDsns",
         "body": [
             "${1:global}.getOdbcDsns().then(function(${3:OdbcDsns}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the list of the ODBC connectors that are installed in the system."
     },
     "qsocks.getOleDbProviders": {
         "prefix": "qsocks.global.getOleDbProviders",
         "body": [
             "${1:global}.getOleDbProviders().then(function(${3:OleDbProviders}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the list of the OLEDB providers installed on the system."
     },
     "qsocks.getDatabasesFromConnectStatement": {
         "prefix": "qsocks.global.getDatabasesFromConnectStatement",
@@ -221,133 +221,133 @@
         "body": [
             "${1:global}.getCustomConnectors(${2:'ReloadList'}).then(function(${3:customConnectors}) {\n\n});"
         ],
-        "description": ""
+        "description": "List the custom connectors available in the system."
     },
     "qsocks.cancelReload": {
         "prefix": "qsocks.global.cancelReload",
         "body": [
             "${1:global}.cancelReload().then(function(${3:cancelReload}) {\n\n});"
         ],
-        "description": ""
+        "description": "Cancels an ongoing reload. The reload of the app is stopped. The indexation can be canceled and true is still the return value of the reload task."
     },
     "qsocks.cancelRequest": {
         "prefix": "qsocks.global.cancelRequest",
         "body": [
             "${1:global}.cancelRequest(${2:'RequestId'}).then(function(${3:cancelRequest}) {\n\n});"
         ],
-        "description": ""
+        "description": "Cancels an ongoing request. The request is stopped."
     },
     "qsocks.configureReload": {
         "prefix": "qsocks.global.configureReload",
         "body": [
             "${1:global}.configureReload(${2:'CancelOnScriptError'}, ${3:'UseErrorData'}, ${4:'InteractOnError'}).then(function(${5:configureReload}) {\n\n});"
         ],
-        "description": ""
+        "description": "Configures the engine's behavior during a reload."
     },
     "qsocks.shutdownProcess": {
         "prefix": "qsocks.global.shutdownProcess",
         "body": [
             "${1:global}.shutdownProcess().then(function(${3:shutdownProcess}) {\n\n});"
         ],
-        "description": ""
+        "description": "Shutdowns the Qlik engine."
     },
     "qsocks.reloadExtensionList": {
         "prefix": "qsocks.global.reloadExtensionList",
         "body": [
             "${1:global}.reloadExtensionList().then(function(${3:reloadExtensionList}) {\n\n});"
         ],
-        "description": ""
+        "description": "Reloads the list of extensions."
     },
     "qsocks.getDefaultAppFolder": {
         "prefix": "qsocks.global.getDefaultAppFolder",
         "body": [
             "${1:global}.getDefaultAppFolder().then(function(${3:defaultAppFolder}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the folder where the apps are stored."
     },
     "qsocks.getFolderItemsForPath": {
         "prefix": "qsocks.global.getFolderItemsForPath",
         "body": [
             "${1:global}.getFolderItemsForPath(${2:'Path'}).then(function(${3:folderItemsForPath}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the files and folders located at a specified path."
     },
     "qsocks.getFunctions": {
         "prefix": "qsocks.global.getFunctions",
         "body": [
             "${1:global}.getFunctions(${2:'Group'}).then(function(${3:functions}) {\n\n});"
         ],
-        "description": ""
+        "description": "Gets the list of all the script functions."
     },
     "qsocks.copyApp": {
         "prefix": "qsocks.global.copyApp",
         "body": [
             "${1:global}.copyApp(${2:'TargetAppId'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:app}) {\n\n});"
         ],
-        "description": ""
+        "description": "Copies an app that is in the Qlik Sense repository."
     },
     "qsocks.importApp": {
         "prefix": "qsocks.global.importApp",
         "body": [
             "${1:global}.importApp(${2:'AppId'}, ${3:'SrcPath'}, ${4:'Ids'}).then(function(${5:import}) {\n\n});"
         ],
-        "description": ""
+        "description": "Imports an app to the Qlik Sense repository."
     },
     "qsocks.importAppEx": {
         "prefix": "qsocks.global.importAppEx",
         "body": [
             "${1:global}.importAppEx(${2:'AppId'}, ${3:'SrcPath'}, ${4:'Ids'}, ${5:'qExcludeConnections'}).then(function(${6:importEx}) {\n\n});"
         ],
-        "description": ""
+        "description": "Imports an app to the Qlik Sense repository. The connections in the app can be excluded from the import."
     },
     "qsocks.exportApp": {
         "prefix": "qsocks.global.exportApp",
         "body": [
             "${1:global}.exportApp(${2:'TargetPath'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:export}) {\n\n});"
         ],
-        "description": ""
+        "description": "Exports an app from the Qlik Sense repository to the file system."
     },
     "qsocks.replaceAppFromID": {
         "prefix": "qsocks.global.replaceAppFromID",
         "body": [
             "${1:global}.replaceAppFromID(${2:'TargetAppId'}, ${2:'SrcAppId'}, ${2:'Ids'}).then(function(${5:replaceApp}) {\n\n});"
         ],
-        "description": ""
+        "description": "Replaces an app with the objects from a source app."
     },
     "qsocks.isValidConnectionString": {
         "prefix": "qsocks.global.isValidConnectionString",
         "body": [
             "${1:global}.isValidConnectionString(${2:'Connection'}).then(function(${3:isValidConnectionString}) {\n\n});"
         ],
-        "description": ""
+        "description": "Description: Checks if a connection string is valid."
     },
     "qsocks.oSVersion": {
         "prefix": "qsocks.global.oSVersion",
         "body": [
             "${1:global}.oSVersion().then(function(${3:oSVersion}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the version number of the operating system."
     },
     "qsocks.getAppEntry": {
         "prefix": "qsocks.global.getAppEntry",
         "body": [
             "${1:global}.getAppEntry(${2:'AppId'}).then(function(${3:appEntry}) {\n\n});"
         ],
-        "description": ""
+        "description": "Retrieves the meta data of an app."
     },
     "qsocks.productVersion": {
         "prefix": "qsocks.global.productVersion",
         "body": [
             "${1:global}.productVersion().then(function(${3:productVersion}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the Qlik Sense version number."
     },
     "qsocks.isPersonalMode": {
         "prefix": "qsocks.global.isPersonalMode",
         "body": [
             "${1:global}.isPersonalMode().then(function(${3:isPersonalMode}) {\n\n});"
         ],
-        "description": ""
+        "description": "Indicates whether or not the user works in personal mode."
     },
     "qsocks.replaceAppFromPath": {
         "prefix": "qsocks.global.replaceAppFromPath",
@@ -361,125 +361,125 @@
         "body": [
             "${1:global}.qvVersion().then(function(${3:version}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the Qlik Sense version number."
     },
     "qsocks.field.getCardinal": {
         "prefix": "qsocks.field.getCardinal",
         "body": [
             "${1:field}.getCardinal().then(function(${3:cardinal}) {\n\n});"
         ],
-        "description": ""
+        "description": "Retrieves the number of distinct values in a field."
     },
     "qsocks.field.getAndMode": {
         "prefix": "qsocks.field.getAndMode",
         "body": [
             "${1:field}.getAndMode().then(function(${3:andMode}) {\n\n});"
         ],
-        "description": ""
+        "description": "Returns the AND mode status of a field."
     },
     "qsocks.field.setAndMode": {
         "prefix": "qsocks.field.setAndMode",
         "body": [
             "${1:field}.setAndMode(${2:'AndMode'}).then(function(${3:andMode}) {\n\n});"
         ],
-        "description": ""
+        "description": "Sets a field in the AND mode."
     },
     "qsocks.field.lowLevelSelect": {
         "prefix": "qsocks.field.lowLevelSelect",
         "body": [
             "${1:field}.lowLevelSelect(${2:'Values'}, ${3:'ToggleMode'}, ${4:'SoftLock'}).then(function(${5:lowLevelSelect}) {\n\n});"
         ],
-        "description": ""
+        "description": "Selects some values in a field, by entering the element numbers related to the values to select."
     },
     "qsocks.field.select": {
         "prefix": "qsocks.field.select",
         "body": [
             "${1:field}.select(${2:'Match'}, ${3:'SoftLock'}, ${4:'ExcludedValuesMode'}).then(function(${5:select}) {\n\n});"
         ],
-        "description": ""
+        "description": "Selects field values matching a search string."
     },
     "qsocks.field.toggleSelect": {
         "prefix": "qsocks.field.toggleSelect",
         "body": [
             "${1:field}.toggleSelect(${2:'Match'}, ${3:'SoftLock'}, ${4:'ExcludedValuesMode'}).then(function(${5:toggleSelect}) {\n\n});"
         ],
-        "description": ""
+        "description": "Toggle selects field values matching a search string."
     },
     "qsocks.field.clearAllButThis": {
         "prefix": "qsocks.field.clearAllButThis",
         "body": [
             "${1:field}.clearAllButThis(${2:'SoftLock'}).then(function(${3:clearAllButThis}) {\n\n});"
         ],
-        "description": ""
+        "description": "Maintains the selections in the current field while clearing the selections in the other fields."
     },
     "qsocks.field.selectPossible": {
         "prefix": "qsocks.field.selectPossible",
         "body": [
             "${1:field}.selectPossible(${2:'SoftLock'}).then(function(${3:selectPossible}) {\n\n});"
         ],
-        "description": ""
+        "description": "Selects all possible values in a specific field."
     },
     "qsocks.field.selectExcluded": {
         "prefix": "qsocks.field.selectExcluded",
         "body": [
             "${1:field}.selectExcluded(${2:'SoftLock'}).then(function(${3:selectExcluded}) {\n\n});"
         ],
-        "description": ""
+        "description": "Inverts the current selections."
     },
     "qsocks.field.selectAll": {
         "prefix": "qsocks.field.selectAll",
         "body": [
             "${1:field}.selectAll(${2:'SoftLock'}).then(function(${3:selectAll}) {\n\n});"
         ],
-        "description": ""
+        "description": "Selects all values of a field. Excluded values are also selected."
     },
     "qsocks.field.selectValues": {
         "prefix": "qsocks.field.selectValues",
         "body": [
             "${1:field}.selectValues(${2:'FieldValues'}, ${2:'Toggle'} ${2:'SoftLock'}).then(function(${5:values}) {\n\n});"
         ],
-        "description": ""
+        "description": "Selects some values in a field, by entering the values to select."
     },
     "qsocks.field.clear": {
         "prefix": "qsocks.field.clear",
         "body": [
             "${1:field}.clear().then(function(${3:clear}) {\n\n});"
         ],
-        "description": ""
+        "description": "Clears the selections in a specific field."
     },
     "qsocks.field.lock": {
         "prefix": "qsocks.field.lock",
         "body": [
             "${1:field}.lock().then(function(${3:lock}) {\n\n});"
         ],
-        "description": ""
+        "description": "Locks all selected values of a specific field."
     },
     "qsocks.field.unlock": {
         "prefix": "qsocks.field.unlock",
         "body": [
             "${1:field}.unlock().then(function(${3:unlock}) {\n\n});"
         ],
-        "description": ""
+        "description": "Unlocks all selected values of a specific field if the target (or handle ) is a field."
     },
     "qsocks.field.selectAlternative": {
         "prefix": "qsocks.field.selectAlternative",
         "body": [
             "${1:field}.selectAlternative(${2:'SoftLock'}).then(function(${3:selectAlternative}) {\n\n});"
         ],
-        "description": ""
+        "description": "Description: Selects all alternatives values in a specific field."
     },
     "qsocks.field.getNxProperties": {
         "prefix": "qsocks.field.getNxProperties",
         "body": [
             "${1:field}.getNxProperties().then(function(${3:NxProperties}) {\n\n});"
         ],
-        "description": ""
+        "description": "Gets the properties of a field."
     },
     "qsocks.field.setNxProperties": {
         "prefix": "qsocks.field.setNxProperties",
         "body": [
             "${1:field}.setNxProperties(${2:'Properties'}).then(function(${3:NxProperties}) {\n\n});"
         ],
-        "description": ""
+        "description": "Sets some properties to a field."
     }
 }
