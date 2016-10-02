@@ -664,4 +664,116 @@
         ],
         "description": "Unpublishes a measure."
     },
+    "qsocks.variable.getProperties": {
+        "prefix": "qsocks.variable.getProperties",
+        "body": [
+            "${1:variable}.getProperties().then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Shows the properties of an object."
+    },
+    "qsocks.variable.applyPatches": {
+        "prefix": "qsocks.variable.applyPatches",
+        "body": [
+            "${1:variable}.applyPatches(${2:'patches'}).then(function(${3:patches}) {\n\n});"
+        ],
+        "description": "Applies a patch to the properties of a variable. Allows an update to some of the properties."
+    },
+    "qsocks.variable.getInfo": {
+        "prefix": "qsocks.variable.getInfo",
+        "body": [
+            "${1:variable}.getInfo().then(function(${3:info}) {\n\n});"
+        ],
+        "description": "Returns the type and identifier of the object."
+    },
+    "qsocks.variable.getLayout": {
+        "prefix": "qsocks.variable.getLayout",
+        "body": [
+            "${1:variable}.getLayout().then(function(${3:layout}) {\n\n});"
+        ],
+        "description": "Evaluates an object and displays its properties including the dynamic properties."
+    },
+    "qsocks.variable.publish": {
+        "prefix": "qsocks.variable.publish",
+        "body": [
+            "${1:variable}.publish().then(function(${3:publish}) {\n\n});"
+        ],
+        "description": "Publishes a variable."
+    },
+    "qsocks.variable.unPublish": {
+        "prefix": "qsocks.variable.unPublish",
+        "body": [
+            "${1:variable}.unPublish().then(function(${3:unPublish}) {\n\n});"
+        ],
+        "description": "Unpublishes a variable."
+    },
+    "qsocks.variable.setProperties": {
+        "prefix": "qsocks.variable.setProperties",
+        "body": [
+            "${1:variable}.setProperties(${2:'Prop'}).then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Sets some properties for a variable."
+    },
+    "qsocks.variable.setDualValue": {
+        "prefix": "qsocks.variable.setDualValue",
+        "body": [
+            "${1:variable}.setDualValue(${2:'Text'}, ${3:'Num'}).then(function(${4:dualValue}) {\n\n});"
+        ],
+        "description": "Sets the value of a dual variable."
+    },
+    "qsocks.variable.setNumValue": {
+        "prefix": "qsocks.variable.setNumValue",
+        "body": [
+            "${1:variable}.setNumValue(${2:'Value'}).then(function(${3:numValue}) {\n\n});"
+        ],
+        "description": "Sets a numerical value to a variable."
+    },
+    "qsocks.variable.setStringValue": {
+        "prefix": "qsocks.variable.setStringValue",
+        "body": [
+            "${1:variable}.setStringValue(${2:'String'}).then(function(${3:stringValue}) {\n\n});"
+        ],
+        "description": "Sets a string value to a variable."
+    },
+    "qsocks.variable.forceContent": {
+        "prefix": "qsocks.variable.forceContent (deprecated)",
+        "body": [
+            "${1:variable}.forceContent().then(function(${3:content}) {\n\n});"
+        ],
+        "description": "Sets the value of a dual variable overriding any input constraints."
+    },
+    "qsocks.variable.getContent": {
+        "prefix": "qsocks.variable.getContent (deprecated)",
+        "body": [
+            "${1:variable}.getContent().then(function(${3:content}) {\n\n});"
+        ],
+        "description": "Returns the calculated value of a variable."
+    },
+    "qsocks.variable.getNxProperties": {
+        "prefix": "qsocks.variable.getNxProperties (deprecated)",
+        "body": [
+            "${1:variable}.getNxProperties().then(function(${3:NxProperties}) {\n\n});"
+        ],
+        "description": "Gets the properties of a variable."
+    },
+    "qsocks.variable.getRawContent": {
+        "prefix": "qsocks.variable.getRawContent (deprecated)",
+        "body": [
+            "${1:variable}.getRawContent().then(function(${3:rawContent}) {\n\n});"
+        ],
+        "description": "Returns the raw value of a variable."
+    },
+    "qsocks.variable.setContent": {
+        "prefix": "qsocks.variable.setContent (deprecated)",
+        "body": [
+            "${1:variable}.setContent().then(function(${3:content}) {\n\n});"
+        ],
+        "description": "Sets a value to a variable."
+    },
+    "qsocks.variable.setNxProperties": {
+        "prefix": "qsocks.variable.setNxProperties (deprecated)",
+        "body": [
+            "${1:variable}.setNxProperties().then(function(${3:NxProperties}) {\n\n});"
+        ],
+        "description": "Sets some properties to a variable."
+    },
 }
