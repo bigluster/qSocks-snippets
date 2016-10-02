@@ -481,5 +481,61 @@
             "${1:field}.setNxProperties(${2:'Properties'}).then(function(${3:NxProperties}) {\n\n});"
         ],
         "description": "Sets some properties to a field."
+    },
+    "qsocks.bookmark.apply": {
+        "prefix": "qsocks.bookmark.apply",
+        "body": [
+            "${1:bookmark}.apply().then(function(${3:apply}) {\n\n});"
+        ],
+        "description": "Applies a bookmark."
+    },
+    "qsocks.bookmark.applyPatches": {
+        "prefix": "qsocks.bookmark.applyPatches",
+        "body": [
+            "${1:bookmark}.applyPatches(${2:'Patches'}).then(function(${3:patches}) {\n\n});"
+        ],
+        "description": "Applies a patch to the properties of an object. Allows an update to some of the properties."
+    },
+    "qsocks.bookmark.getLayout": {
+        "prefix": "qsocks.bookmark.getLayout",
+        "body": [
+            "${1:bookmark}.getLayout().then(function(${3:layout}) {\n\n});"
+        ],
+        "description": "Evaluates an object and displays its properties including the dynamic properties."
+    },
+    "qsocks.bookmark.getProperties": {
+        "prefix": "qsocks.bookmark.getProperties",
+        "body": [
+            "${1:bookmark}.getProperties().then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Shows the properties of an object."
+    },
+    "qsocks.bookmark.getInfo": {
+        "prefix": "qsocks.bookmark.getInfo",
+        "body": [
+            "${1:bookmark}.getInfo().then(function(${3:info}) {\n\n});"
+        ],
+        "description": "Returns: the type of the object and the identifier of the object"
+    },
+    "qsocks.bookmark.setProperties": {
+        "prefix": "qsocks.bookmark.setProperties",
+        "body": [
+            "${1:bookmark}.setProperties(${2:'Prop'}).then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Sets some properties for a bookmark."
+    },
+    "qsocks.bookmark.publish": {
+        "prefix": "qsocks.bookmark.publish",
+        "body": [
+            "${1:bookmark}.publish().then(function(${3:publish}) {\n\n});"
+        ],
+        "description": "Publishes a bookmark."
+    },
+    "qsocks.bookmark.unPublish": {
+        "prefix": "qsocks.bookmark.unPublish",
+        "body": [
+            "${1:bookmark}.unPublish().then(function(${3:unPublish}) {\n\n});"
+        ],
+        "description": "Unpublishes a bookmark."
     }
 }
