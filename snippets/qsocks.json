@@ -776,4 +776,872 @@
         ],
         "description": "Sets some properties to a variable."
     },
+    "qsocks.doc.commitDraft": {
+        "prefix": "qsocks.doc.commitDraft",
+        "body": [
+            "${1:doc}.commitDraft(${2:id}).then(function(${3:draft}) {\n\n});"
+        ],
+        "description": "Commits the draft of an object that was previously created by invoking the CreateDraft method."
+    },
+    "qsocks.doc.createDraft": {
+        "prefix": "qsocks.doc.createDraft",
+        "body": [
+            "${1:doc}.createDraft(${2:id}).then(function(${3:draft}) {\n\n});"
+        ],
+        "description": "Creates a draft of an object."
+    },
+    "qsocks.doc.getProperties": {
+        "prefix": "qsocks.doc.getProperties",
+        "body": [
+            "${1:doc}.getProperties().then(function(${3:properties}) {\n\n});"
+        ],
+        "description": "Gets the properties of an app."
+    },
+    "qsocks.doc.addFieldFromExpression": {
+        "prefix": "qsocks.doc.addFieldFromExpression",
+        "body": [
+            "${1:doc}.addFieldFromExpression(${2:Name}, ${3:Expression}).then(function(${4:field}) {\n\n});"
+        ],
+        "description": "Adds a field on the fly."
+    },
+    "qsocks.doc.findMatchingFields": {
+        "prefix": "qsocks.doc.findMatchingFields",
+        "body": [
+            "${1:doc}.findMatchingFields(${2:Fieldnames}, ${3:Tags}).then(function(${4:fields}) {\n\n});"
+        ],
+        "description": "etrieves any fields that belong to the same archipelago as the specified field and that match at least one of the specified tags."
+    },
+    "qsocks.doc.getMatchingFields": {
+        "prefix": "qsocks.doc.getMatchingFields",
+        "body": [
+            "${1:doc}.getMatchingFields(${2:Tags}).then(function(${3:fields}) {\n\n});"
+        ],
+        "description": "Retrieves any fields that match all or one of the specified tags in the data model of an app."
+    },
+    "qsocks.doc.getField": {
+        "prefix": "qsocks.doc.getField",
+        "body": [
+            "${1:doc}.getField(${2:FieldName}, ${3:StateName}).then(function(${4:field}) {\n\n});"
+        ],
+        "description": "Retrieves the handle of a field."
+    },
+    "qsocks.doc.getFieldDescription": {
+        "prefix": "qsocks.doc.getFieldDescription",
+        "body": [
+            "${1:doc}.getFieldDescription(${2:FieldName}).then(function(${3:fieldDescription}) {\n\n});"
+        ],
+        "description": "etrieves the description of a field."
+    },
+    "qsocks.doc.getLooselyCoupledVector": {
+        "prefix": "qsocks.doc.getLooselyCoupledVector",
+        "body": [
+            "${1:doc}.getLooselyCoupledVector().then(function(${3:Vector}) {\n\n});"
+        ],
+        "description": "Returns a vector of loosely coupled state flags, one element for each table in the app."
+    },
+    "qsocks.doc.setLooselyCoupledVector": {
+        "prefix": "qsocks.doc.setLooselyCoupledVector",
+        "body": [
+            "${1:doc}.setLooselyCoupledVector(${2:v}).then(function(${3:Vector}) {\n\n});"
+        ],
+        "description": "Sets a vector of loosely coupled state flags, one element for each table in the app."
+    },
+    "qsocks.doc.backCount": {
+        "prefix": "qsocks.doc.backCount",
+        "body": [
+            "${1:doc}.backCount().then(function(${3:count}) {\n\n});"
+        ],
+        "description": "Returns the number of entries on the Back stack."
+    },
+    "qsocks.doc.forwardCount": {
+        "prefix": "qsocks.doc.forwardCount",
+        "body": [
+            "${1:doc}.forwardCount().then(function(${3:count}) {\n\n});"
+        ],
+        "description": "Returns the number of entries on the Forward stack."
+    },
+    "qsocks.doc.clearAll": {
+        "prefix": "qsocks.doc.clearAll",
+        "body": [
+            "${1:doc}.clearAll(${2:LockedAlso}, ${3:StateName}).then(function(${4:clearAll}) {\n\n});"
+        ],
+        "description": "Clears all selections in all fields of the current app."
+    },
+    "qsocks.doc.lockAll": {
+        "prefix": "qsocks.doc.lockAll",
+        "body": [
+            "${1:doc}.lockAll(${2:StateName}).then(function(${3:lockAll}) {\n\n});"
+        ],
+        "description": "Locks all selections in all fields of the current app."
+    },
+    "qsocks.doc.unlockAll": {
+        "prefix": "qsocks.doc.unlockAll",
+        "body": [
+            "${1:doc}.unlockAll(${2:StateName}).then(function(${3:unlockAll}) {\n\n});"
+        ],
+        "description": "Unlocks all selections in all fields of the current app."
+    },
+    "qsocks.doc.back": {
+        "prefix": "qsocks.doc.back",
+        "body": [
+            "${1:doc}.back().then(function(${3:back}) {\n\n});"
+        ],
+        "description": "oads the last logical operation  (if any)."
+    },
+    "qsocks.doc.forward": {
+        "prefix": "qsocks.doc.forward",
+        "body": [
+            "${1:doc}.forward().then(function(${3:forward}) {\n\n});"
+        ],
+        "description": "Loads the next logical operation (if any)."
+    },
+    "qsocks.doc.removeAllData": {
+        "prefix": "qsocks.doc.removeAllData",
+        "body": [
+            "${1:doc}.removeAllData().then(function(${3:removeAllData}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getDocBookmarks": {
+        "prefix": "qsocks.doc.getDocBookmarks",
+        "body": [
+            "${1:doc}.getDocBookmarks().then(function(${3:bookmarks}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getAllInfos": {
+        "prefix": "qsocks.doc.getAllInfos",
+        "body": [
+            "${1:doc}.getAllInfos().then(function(${3:allInfos}) {\n\n});"
+        ],
+        "description": "Returns the identifier and the type of any generic object in the app."
+    },
+    "qsocks.doc.getAssociationScores": {
+        "prefix": "qsocks.doc.getAssociationScores",
+        "body": [
+            "${1:doc}.getAssociationScores(${2:Table1}, ${2:Table2}).then(function(${3:associationScores}) {\n\n});"
+        ],
+        "description": "Computes a set of association scores for each pair of fields between two given tables that have been loaded in an app."
+    },
+    "qsocks.doc.getLocaleInfo": {
+        "prefix": "qsocks.doc.getLocaleInfo",
+        "body": [
+            "${1:doc}.getLocaleInfo().then(function(${3:localeInfo}) {\n\n});"
+        ],
+        "description": "Retrieves locale information."
+    },
+    "qsocks.doc.getTablesAndKeys": {
+        "prefix": "qsocks.doc.getTablesAndKeys",
+        "body": [
+            "${1:doc}.getTablesAndKeys(${2:WindowSize}, ${3:NullSize}, ${4:CellHeight}, ${5:SyntheticMode}, ${6:IncludeSysVars}).then(function(${7:tablesAndKeys}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getViewDlgSaveInfo": {
+        "prefix": "qsocks.doc.getViewDlgSaveInfo",
+        "body": [
+            "${1:doc}.getViewDlgSaveInfo().then(function(${3:viewDlgSaveInfo}) {\n\n});"
+        ],
+        "description": "Retrieves information about the position of the tables in the data model viewer."
+    },
+    "qsocks.doc.setViewDlgSaveInfo": {
+        "prefix": "qsocks.doc.setViewDlgSaveInfo",
+        "body": [
+            "${1:doc}.setViewDlgSaveInfo(${2:Info}).then(function(${3:veiwDlgSaveInfo}) {\n\n});"
+        ],
+        "description": "Sets the positions of the tables in the data model viewer."
+    },
+    "qsocks.doc.getEmptyScript": {
+        "prefix": "qsocks.doc.getEmptyScript",
+        "body": [
+            "${1:doc}.getEmptyScript(${2:LocalizeMainSection}).then(function(${3:script}) {\n\n});"
+        ],
+        "description": "Creates a script that contains one section. This section contains Set statements that give localized information from the regional settings of the computer."
+    },
+    "qsocks.doc.getDocBookmarkInfo": {
+        "prefix": "qsocks.doc.getDocBookmarkInfo",
+        "body": [
+            "${1:doc}.getDocBookmarkInfo().then(function(${3:bookmarkInfo}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getAllExpressions": {
+        "prefix": "qsocks.doc.getAllExpressions",
+        "body": [
+            "${1:doc}.getAllExpressions().then(function(${3:expressions}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.doReload": {
+        "prefix": "qsocks.doc.doReload",
+        "body": [
+            "${1:doc}.doReload(${2:Mode}, ${3:Partial}, ${4:Debug}).then(function(${5:reload}) {\n\n});"
+        ],
+        "description": "Reloads the script that is set in an app."
+    },
+    "qsocks.doc.doReloadEx": {
+        "prefix": "qsocks.doc.doReloadEx",
+        "body": [
+            "${1:doc}.doReloadEx(${2:Mode}, ${3:Partial}, ${4:Debug}).then(function(${3:reloadEx}) {\n\n});"
+        ],
+        "description": "Reloads the script that is set in an app and returns the path to the script log file."
+    },
+    "qsocks.doc.getScriptBreakpoints": {
+        "prefix": "qsocks.doc.getScriptBreakpoints",
+        "body": [
+            "${1:doc}.getScriptBreakpoints().then(function(${3:scriptBreakpoints}) {\n\n});"
+        ],
+        "description": "Lists the breakpoints in the script of an app."
+    },
+    "qsocks.doc.setScriptBreakpoints": {
+        "prefix": "qsocks.doc.setScriptBreakpoints",
+        "body": [
+            "${1:doc}.setScriptBreakpoints(${2:Breakpoints}).then(function(${3:breakpoints}) {\n\n});"
+        ],
+        "description": "Set some breakpoints in the script of an app."
+    },
+    "qsocks.doc.getScript": {
+        "prefix": "qsocks.doc.getScript",
+        "body": [
+            "${1:doc}.getScript().then(function(${3:script}) {\n\n});"
+        ],
+        "description": "Gets values in script."
+    },
+    "qsocks.doc.getTextMacros": {
+        "prefix": "qsocks.doc.getTextMacros",
+        "body": [
+            "${1:doc}.getTextMacros().then(function(${3:textMacros}) {\n\n});"
+        ],
+        "description": "Fetches updated variables after a statement execution."
+    },
+    "qsocks.doc.setFetchLimit": {
+        "prefix": "qsocks.doc.setFetchLimit",
+        "body": [
+            "${1:doc}.setFetchLimit(${2:Limit}).then(function(${3:fetchLimit}) {\n\n});"
+        ],
+        "description": "Limits the number of rows of data to load from a data source."
+    },
+    "qsocks.doc.doSave": {
+        "prefix": "qsocks.doc.doSave",
+        "body": [
+            "${1:doc}.doSave(${2:FileName}).then(function(${3:save}) {\n\n});"
+        ],
+        "description": "Saves an app. All objects and data in the data model are saved."
+    },
+    "qsocks.doc.getTableData": {
+        "prefix": "qsocks.doc.getTableData",
+        "body": [
+            "${1:doc}.getTableData(${2:Offset}, ${3:Rows}, ${4:SyntheticMode}, ${5:TableName}).then(function(${6:tableData}) {\n\n});"
+        ],
+        "description": "Retrieves the data of a specific table."
+    },
+    "qsocks.doc.getAppLayout": {
+        "prefix": "qsocks.doc.getAppLayout",
+        "body": [
+            "${1:doc}.getAppLayout().then(function(${3:layout}) {\n\n});"
+        ],
+        "description": "Evaluates an app."
+    },
+    "qsocks.doc.setAppProperties": {
+        "prefix": "qsocks.doc.setAppProperties",
+        "body": [
+            "${1:doc}.setAppProperties(${2:Prop}).then(function(${3:appProperties}) {\n\n});"
+        ],
+        "description": "Sets properties to an app."
+    },
+    "qsocks.doc.getAppProperties": {
+        "prefix": "qsocks.doc.getAppProperties",
+        "body": [
+            "${1:doc}.getAppProperties().then(function(${3:appProperties}) {\n\n});"
+        ],
+        "description": "Gets the properties of an app."
+    },
+    "qsocks.doc.createSessionObject": {
+        "prefix": "qsocks.doc.createSessionObject",
+        "body": [
+            "${1:doc}.createSessionObject(${2:Prop}).then(function(${3:sessionObject}) {\n\n});"
+        ],
+        "description": " Creates a transient object. For example, you can use a transient object to create an app overview or a story overview."
+    },
+    "qsocks.doc.destroySessionObject": {
+        "prefix": "qsocks.doc.destroySessionObject",
+        "body": [
+            "${1:doc}.destroySessionObject(${2:Id}).then(function(${3:sessionObject}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.createObject": {
+        "prefix": "qsocks.doc.createObject",
+        "body": [
+            "${1:doc}.createObject(${2:Prop}).then(function(${3:object}) {\n\n});"
+        ],
+        "description": "Removes a transient object."
+    },
+    "qsocks.doc.destroyObject": {
+        "prefix": "qsocks.doc.destroyObject",
+        "body": [
+            "${1:doc}.destroyObject(${2:Id}).then(function(${3:object}) {\n\n});"
+        ],
+        "description": "Removes an app object."
+    },
+    "qsocks.doc.getObject": {
+        "prefix": "qsocks.doc.getObject",
+        "body": [
+            "${1:doc}.getObject(${2:Id}).then(function(${3:object}) {\n\n});"
+        ],
+        "description": "Returns the type of the app object and the corresponding handle."
+    },
+    "qsocks.doc.cloneObject": {
+        "prefix": "qsocks.doc.cloneObject",
+        "body": [
+            "${1:doc}.cloneObject(${2:Id}).then(function(${3:object}) {\n\n});"
+        ],
+        "description": "Clones any visualizations, sheets and stories. The clone method works for both app objects and child objects."
+    },
+    "qsocks.doc.undo": {
+        "prefix": "qsocks.doc.undo",
+        "body": [
+            "${1:doc}.undo().then(function(${3:undo}) {\n\n});"
+        ],
+        "description": "Undoes the previous operation."
+    },
+    "qsocks.doc.redo": {
+        "prefix": "qsocks.doc.redo",
+        "body": [
+            "${1:doc}.redo().then(function(${3:redo}) {\n\n});"
+        ],
+        "description": "Redoes the previous operation."
+    },
+    "qsocks.doc.clearUndoBuffer": {
+        "prefix": "qsocks.doc.clearUndoBuffer",
+        "body": [
+            "${1:doc}.clearUndoBuffer().then(function(${3:ubdiBuffer}) {\n\n});"
+        ],
+        "description": "Clears entirely the undo and redo buffer."
+    },
+    "qsocks.doc.createDimension": {
+        "prefix": "qsocks.doc.createDimension",
+        "body": [
+            "${1:doc}.createDimension(${2:Prop}).then(function(${3:dimension}) {\n\n});"
+        ],
+        "description": "Creates a master dimension."
+    },
+    "qsocks.doc.destroyDimension": {
+        "prefix": "qsocks.doc.destroyDimension",
+        "body": [
+            "${1:doc}.destroyDimension(${2:id}).then(function(${3:dimension}) {\n\n});"
+        ],
+        "description": "Removes a dimension."
+    },
+    "qsocks.doc.destroyDraft": {
+        "prefix": "qsocks.doc.destroyDraft",
+        "body": [
+            "${1:doc}.destroyDraft(${2:Id}, ${3:SourceId}).then(function(${3:draft}) {\n\n});"
+        ],
+        "description": "Removes the draft of an object."
+    },
+    "qsocks.doc.getDimension": {
+        "prefix": "qsocks.doc.getDimension",
+        "body": [
+            "${1:doc}.getDimension(${2:Id}).then(function(${3:dimension}) {\n\n});"
+        ],
+        "description": "Returns the handle of a dimension."
+    },
+    "qsocks.doc.cloneDimension": {
+        "prefix": "qsocks.doc.cloneDimension",
+        "body": [
+            "${1:doc}.cloneDimension(${2:Id}).then(function(${3:dimension}) {\n\n});"
+        ],
+        "description": "Clones a dimension."
+    },
+    "qsocks.doc.createMeasure": {
+        "prefix": "qsocks.doc.createMeasure",
+        "body": [
+            "${1:doc}.createMeasure(${2:Prop}).then(function(${3:measure}) {\n\n});"
+        ],
+        "description": "Creates a master measure."
+    },
+    "qsocks.doc.destroyMeasure": {
+        "prefix": "qsocks.doc.destroyMeasure",
+        "body": [
+            "${1:doc}.destroyMeasure(${2:Id}).then(function(${3:measure}) {\n\n});"
+        ],
+        "description": "Removes a generic measure."
+    },
+    "qsocks.doc.getMeasure": {
+        "prefix": "qsocks.doc.getMeasure",
+        "body": [
+            "${1:doc}.getMeasure(${2:Id}).then(function(${3:measure}) {\n\n});"
+        ],
+        "description": "Returns the handle of a measure."
+    },
+    "qsocks.doc.cloneMeasure": {
+        "prefix": "qsocks.doc.cloneMeasure",
+        "body": [
+            "${1:doc}.cloneMeasure(${2:Id}).then(function(${3:measure}) {\n\n});"
+        ],
+        "description": "Clones a measure."
+    },
+    "qsocks.doc.checkExpression": {
+        "prefix": "qsocks.doc.checkExpression",
+        "body": [
+            "${1:doc}.checkExpression(${2:Expr}).then(function(${3:checkExpression}) {\n\n});"
+        ],
+        "description": "Checks if a given expression is valid."
+    },
+    "qsocks.doc.checkNumberOrExpression": {
+        "prefix": "qsocks.doc.checkNumberOrExpression",
+        "body": [
+            "${1:doc}.checkNumberOrExpression(${2:Expr}).then(function(${3:numberOrExpression}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.addAlternateState": {
+        "prefix": "qsocks.doc.addAlternateState",
+        "body": [
+            "${1:doc}.addAlternateState(${2:StateName}).then(function(${3:alternateState}) {\n\n});"
+        ],
+        "description": "Adds an alternate state in the app."
+    },
+    "qsocks.doc.removeAlternateState": {
+        "prefix": "qsocks.doc.removeAlternateState",
+        "body": [
+            "${1:doc}.removeAlternateState(${2:StateName}).then(function(${3:alternateState}) {\n\n});"
+        ],
+        "description": "Removes an alternate state in the app."
+    },
+    "qsocks.doc.setScript": {
+        "prefix": "qsocks.doc.setScript",
+        "body": [
+            "${1:doc}.setScript(${2:Script}).then(function(${3:script}) {\n\n});"
+        ],
+        "description": "Sets values in script."
+    },
+    "qsocks.doc.checkScriptSyntax": {
+        "prefix": "qsocks.doc.checkScriptSyntax",
+        "body": [
+            "${1:doc}.checkScriptSyntax().then(function(${3:scriptSyntax}) {\n\n});"
+        ],
+        "description": "Checks the syntax of a script."
+    },
+    "qsocks.doc.getDirectoryListing": {
+        "prefix": "qsocks.doc.getDirectoryListing",
+        "body": [
+            "${1:doc}.getDirectoryListing(${2:Connection}, ${3:RelativePath} ${4:Path}).then(function(${3:directoryListing}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.canCreateConnection": {
+        "prefix": "qsocks.doc.canCreateConnection",
+        "body": [
+            "${1:doc}.canCreateConnection().then(function(${3:canCreateConnection}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.createConnection": {
+        "prefix": "qsocks.doc.createConnection",
+        "body": [
+            "${1:doc}.createConnection().then(function(${3:connection}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getConnections": {
+        "prefix": "qsocks.doc.getConnections",
+        "body": [
+            "${1:doc}.getConnections().then(function(${3:connections}) {\n\n});"
+        ],
+        "description": "ists the connections in an app."
+    },
+    "qsocks.doc.createNewConnection": {
+        "prefix": "qsocks.doc.createNewConnection",
+        "body": [
+            "${1:doc}.createNewConnection(${2:Name}, ${3:ConnectionString}, ${4:UserName}, ${5:Password}).then(function(${6:connection}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.deleteConnection": {
+        "prefix": "qsocks.doc.deleteConnection",
+        "body": [
+            "${1:doc}.deleteConnection(${2:Id}).then(function(${3:connection}) {\n\n});"
+        ],
+        "description": "Deletes a connection."
+    },
+    "qsocks.doc.getConnection": {
+        "prefix": "qsocks.doc.getConnection",
+        "body": [
+            "${1:doc}.getConnection(${2:Id}).then(function(${3:connection}) {\n\n});"
+        ],
+        "description": "Retrieves a connection."
+    },
+    "qsocks.doc.modifyConnection": {
+        "prefix": "qsocks.doc.modifyConnection",
+        "body": [
+            "${1:doc}.modifyConnection(${2:qConnectionId}, ${3:qConnection}, ${4:qOverrideCredentials}).then(function(${5:connection}) {\n\n});"
+        ],
+        "description": "Updates a connection."
+    },
+    "qsocks.doc.getConnectionInfo": {
+        "prefix": "qsocks.doc.getConnectionInfo",
+        "body": [
+            "${1:doc}.getConnectionInfo(${2:Connection}).then(function(${3:connectionInfo}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getConnectionDatabases": {
+        "prefix": "qsocks.doc.getConnectionDatabases",
+        "body": [
+            "${1:doc}.getConnectionDatabases(${2:Connection}).then(function(${3:connectionDatabases}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getConnectionOwners": {
+        "prefix": "qsocks.doc.getConnectionOwners",
+        "body": [
+            "${1:doc}.getConnectionOwners(${2:Connection}, ${3:Database}).then(function(${4:connectionOwners}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getDatabaseInfo": {
+        "prefix": "qsocks.doc.getDatabaseInfo",
+        "body": [
+            "${1:doc}.getDatabaseInfo(${2:Connection}).then(function(${3:databaseInfo}) {\n\n});"
+        ],
+        "description": "Gives information about an ODBC, OLEDB or CUSTOM connection. See GetDatabaseInfo method for more details."
+    },
+    "qsocks.doc.getDatabases": {
+        "prefix": "qsocks.doc.getDatabases",
+        "body": [
+            "${1:doc}.getDatabases(${2:Connection}).then(function(${3:databases}) {\n\n});"
+        ],
+        "description": "Lists the databases inside a ODBC, OLEDB or CUSTOM data source."
+    },
+    "qsocks.doc.getDatabaseOwners": {
+        "prefix": "qsocks.doc.getDatabaseOwners",
+        "body": [
+            "${1:doc}.getDatabaseOwners(${2:Connection}, ${3:Databse}).then(function(${4:databaseOwners}) {\n\n});"
+        ],
+        "description": "Lists the owners of a database for a ODBC, OLEDB or CUSTOM connection."
+    },
+    "qsocks.doc.getDatabaseTables": {
+        "prefix": "qsocks.doc.getDatabaseTables",
+        "body": [
+            "${1:doc}.getDatabaseTables(${2:Connection}, ${3:Database}, ${4:Owner}).then(function(${5:databaseTables}) {\n\n});"
+        ],
+        "description": "Description: Lists the tables inside a database for a ODBC, OLEDB or CUSTOM connection."
+    },
+    "qsocks.doc.getDatabaseTableFields": {
+        "prefix": "qsocks.doc.getDatabaseTableFields",
+        "body": [
+            "${1:doc}.getDatabaseTableFields(${2:Connection}, ${3:Database}, ${4:Owner}, ${5:Table}).then(function(${6:databaseTableFields}) {\n\n});"
+        ],
+        "description": "Lists the fields inside a table of a database for a ODBC, OLEDB or CUSTOM connection."
+    },
+    "qsocks.doc.getDatabaseTablePreview": {
+        "prefix": "qsocks.doc.getDatabaseTablePreview",
+        "body": [
+            "${1:doc}.getDatabaseTablePreview(${2:Connection}, ${3:Database}, ${4:Owner}, ${5:Table}).then(function(${6:databaseTablePreview}) {\n\n});"
+        ],
+        "description": "Retrieves the values of the specified table of a database for a ODBC, OLEDB or CUSTOM connection."
+    },
+    "qsocks.doc.guessFileType": {
+        "prefix": "qsocks.doc.guessFileType",
+        "body": [
+            "${1:doc}.guessFileType(${2:Connection}, ${3:RelativePath}).then(function(${4:fileType}) {\n\n});"
+        ],
+        "description": "Guesses the data format for a given file."
+    },
+    "qsocks.doc.getFileTables": {
+        "prefix": "qsocks.doc.getFileTables",
+        "body": [
+            "${1:doc}.getFileTables(${2:Connection}, ${3:RelativePath}, ${4:Type}).then(function(${5:fileTables}) {\n\n});"
+        ],
+        "description": "Lists the tables for a folder connection."
+    },
+    "qsocks.doc.getFileTablesEx": {
+        "prefix": "qsocks.doc.getFileTablesEx",
+        "body": [
+            "${1:doc}.getFileTablesEx(${2:Connection}, ${3:RelativePath}, ${4:Type}).then(function(${5:fileTablesEx}) {\n\n});"
+        ],
+        "description": "Lists the tables and fields of a JSON or XML file for a folder connection."
+    },
+    "qsocks.doc.getFileTableFields": {
+        "prefix": "qsocks.doc.getFileTableFields",
+        "body": [
+            "${1:doc}.getFileTableFields(${2:Connection}, ${3:RelativePath}, ${4:Table}, ${5:FormatInfo}).then(function(${6:fileTableFields}) {\n\n});"
+        ],
+        "description": "Lists the fields of a table  for a folder connection."
+    },
+    "qsocks.doc.getFileTableFieldsPreview": {
+        "prefix": "qsocks.doc.getFileTableFieldsPreview",
+        "body": [
+            "${1:doc}.getFileTableFieldsPreview(${2:Connection}, ${3:RelativePath}, ${4:Table}, ${5:FormatInfo}).then(function(${6:fileTableFieldsPreview}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getFileTablesAndFields": {
+        "prefix": "qsocks.doc.getFileTablesAndFields",
+        "body": [
+            "${1:doc}.getFileTablesAndFields(${2:Connection}, ${3:RelativePath}, ${4:Type}).then(function(${5:fileTablesAndFields}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.getFolderItemsForConnection": {
+        "prefix": "qsocks.doc.getFolderItemsForConnection",
+        "body": [
+            "${1:doc}.getFolderItemsForConnection(${2:Connection}, ${3:RelativePath}).then(function(${4:folderItemsForConnection}) {\n\n});"
+        ],
+        "description": "Lists the items for a folder connection."
+    },
+    "qsocks.doc.getIncludeFileContent": {
+        "prefix": "qsocks.doc.getIncludeFileContent",
+        "body": [
+            "${1:doc}.getIncludeFileContent(${2:Path}).then(function(${3:fileContent}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.sendGenericCommandToCustomConnector": {
+        "prefix": "qsocks.doc.sendGenericCommandToCustomConnector",
+        "body": [
+            "${1:doc}.sendGenericCommandToCustomConnector(${2:Provider}, ${3:Command}, ${4:Method}, ${5:Parameters}, ${6:AppendConnection}).then(function(${7:sendGenericCommandToCustomConnector}) {\n\n});"
+        ],
+        "description": "Sends a generic command to a custom connector."
+    },
+    "qsocks.doc.getFavoriteVariables": {
+        "prefix": "qsocks.doc.getFavoriteVariables",
+        "body": [
+            "${1:doc}.getFavoriteVariables().then(function(${3:variables}) {\n\n});"
+        ],
+        "description": "Retrieves the variables that are tagged as favorite."
+    },
+    "qsocks.doc.setFavoriteVariables": {
+        "prefix": "qsocks.doc.setFavoriteVariables",
+        "body": [
+            "${1:doc}.setFavoriteVariables(${2:Names}).then(function(${3:variables}) {\n\n});"
+        ],
+        "description": "Set some variables as favorite."
+    },
+    "qsocks.doc.createBookmark": {
+        "prefix": "qsocks.doc.createBookmark",
+        "body": [
+            "${1:doc}.createBookmark(${2:Prop}).then(function(${3:bookmark}) {\n\n});"
+        ],
+        "description": "Creates a bookmark."
+    },
+    "qsocks.doc.destroyBookmark": {
+        "prefix": "qsocks.doc.destroyBookmark",
+        "body": [
+            "${1:doc}.destroyBookmark(${2:Id}).then(function(${3:bookmark}) {\n\n});"
+        ],
+        "description": "Removes a bookmark."
+    },
+    "qsocks.doc.getBookmark": {
+        "prefix": "qsocks.doc.getBookmark",
+        "body": [
+            "${1:doc}.getBookmark(${2:Id}).then(function(${3:bookmark}) {\n\n});"
+        ],
+        "description": "Returns the handle of a bookmark."
+    },
+    "qsocks.doc.applyBookmark": {
+        "prefix": "qsocks.doc.applyBookmark",
+        "body": [
+            "${1:doc}.applyBookmark(${2:Id}).then(function(${3:bookmark}) {\n\n});"
+        ],
+        "description": "Applies a bookmark."
+    },
+    "qsocks.doc.cloneBookmark": {
+        "prefix": "qsocks.doc.cloneBookmark",
+        "body": [
+            "${1:doc}.cloneBookmark(${2:Id}).then(function(${3:bookmark}) {\n\n});"
+        ],
+        "description": "Clones a bookmark."
+    },
+    "qsocks.doc.getExpressions": {
+        "prefix": "qsocks.doc.getExpressions",
+        "body": [
+            "${1:doc}.getExpressions().then(function(${3:expressions}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.resume": {
+        "prefix": "qsocks.doc.resume",
+        "body": [
+            "${1:doc}.resume().then(function(${3:resume}) {\n\n});"
+        ],
+        "description": "Resumes the app as the user left it."
+    },
+    "qsocks.doc.abortModal": {
+        "prefix": "qsocks.doc.abortModal",
+        "body": [
+            "${1:doc}.abortModal(${2:Accept}).then(function(${3:abort}) {\n\n});"
+        ],
+        "description": "Aborts any selection mode in an app. For more information about selection mode, see BeginSelections method."
+    },
+    "qsocks.doc.generateThumbNail": {
+        "prefix": "qsocks.doc.generateThumbNail",
+        "body": [
+            "${1:doc}.generateThumbNail(${2:ObjectId}).then(function(${3:thumbnail}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.doc.publish": {
+        "prefix": "qsocks.doc.publish",
+        "body": [
+            "${1:doc}.publish(${2:StreamId}, ${3:Name}).then(function(${4:publish}) {\n\n});"
+        ],
+        "description": "Publishes an app.   The published app can have a different name than the original app."
+    },
+    "qsocks.doc.saveObjects": {
+        "prefix": "qsocks.doc.saveObjects",
+        "body": [
+            "${1:doc}.saveObjects().then(function(${3:objects}) {\n\n});"
+        ],
+        "description": "Saves all objects that were modified in the app."
+    },
+    "qsocks.doc.unPublish": {
+        "prefix": "qsocks.doc.unPublish",
+        "body": [
+            "${1:doc}.unPublish().then(function(${3:ubPublish}) {\n\n});"
+        ],
+        "description": "Unpublishes an app."
+    },
+    "qsocks.doc.searchSuggest": {
+        "prefix": "qsocks.doc.searchSuggest",
+        "body": [
+            "${1:doc}.searchSuggest(${2:Options}, ${3:Terms}).then(function(${4:suggest}) {\n\n});"
+        ],
+        "description": "Returns search terms suggestions."
+    },
+    "qsocks.doc.selectAssociations": {
+        "prefix": "qsocks.doc.selectAssociations",
+        "body": [
+            "${1:doc}.selectAssociations(${2:Options}, ${3:Terms}, ${4:MatchIx} ${5:SoftLock}).then(function(${6:assocciations}) {\n\n});"
+        ],
+        "description": "Selects all search hits for a specified group."
+    },
+    "qsocks.doc.getLibraryContent": {
+        "prefix": "qsocks.doc.getLibraryContent",
+        "body": [
+            "${1:doc}.getLibraryContent(${2:qName}).then(function(${3:libraryContent}) {\n\n});"
+        ],
+        "description": "Returns the content of a library."
+    },
+    "qsocks.doc.getContentLibraries": {
+        "prefix": "qsocks.doc.getContentLibraries",
+        "body": [
+            "${1:doc}.getContentLibraries().then(function(${3:contentLibrary}) {\n\n});"
+        ],
+        "description": "Lists the content libraries."
+    },
+    "qsocks.doc.createSessionVariable": {
+        "prefix": "qsocks.doc.createSessionVariable",
+        "body": [
+            "${1:doc}.createSessionVariable(${2:Prop}).then(function(${3:sessionVariable}) {\n\n});"
+        ],
+        "description": "Creates a transient variable."
+    },
+    "qsocks.doc.createVariableEx": {
+        "prefix": "qsocks.doc.createVariableEx",
+        "body": [
+            "${1:doc}.createVariableEx(${2:Prop}).then(function(${3:variableEx}) {\n\n});"
+        ],
+        "description": "Creates a variable."
+    },
+    "qsocks.doc.getVariableById": {
+        "prefix": "qsocks.doc.getVariableById",
+        "body": [
+            "${1:doc}.getVariableById(${2:Id}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Gets the handle of a variable."
+    },
+    "qsocks.doc.getVariableByName ": {
+        "prefix": "qsocks.doc.getVariableByName",
+        "body": [
+            "${1:doc}.getVariableByName(${2:Name}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Gets the handle of a variable."
+    },
+    "qsocks.doc.destroySessionVariable": {
+        "prefix": "qsocks.doc.destroySessionVariable",
+        "body": [
+            "${1:doc}.destroySessionVariable(${2:Id}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Removes a transient variable."
+    },
+    "qsocks.doc.destroyVariableById": {
+        "prefix": "qsocks.doc.destroyVariableById",
+        "body": [
+            "${1:doc}.destroyVariableById(${2:Id}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Removes a variable."
+    },
+    "qsocks.doc.destroyVariableByName ": {
+        "prefix": "qsocks.doc.destroyVariableByName",
+        "body": [
+            "${1:doc}.destroyVariableByName(${2:Name}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Removes a variable."
+    },
+    "qsocks.doc.evaluate": {
+        "prefix": "qsocks.doc.evaluate",
+        "body": [
+            "${1:doc}.evaluate(${2:qExpression}).then(function(${3:evaluate}) {\n\n});"
+        ],
+        "description": "Evaluates an expression as a string."
+    },
+    "qsocks.doc.evaluateEx": {
+        "prefix": "qsocks.doc.evaluateEx",
+        "body": [
+            "${1:doc}.evaluateEx(${2:qExpression}).then(function(${3:evaluateEx}) {\n\n});"
+        ],
+        "description": " Evaluates an expression as a dual."
+    },
+    "qsocks.doc.searchObjects": {
+        "prefix": "qsocks.doc.searchObjects",
+        "body": [
+            "${1:doc}.searchObjects(${2:qOptions}, ${3:qTerm}, ${4:qPage}).then(function(${5:objects}) {\n\n});"
+        ],
+        "description": "Returns the generic objects corresponding to one or more search terms. The search is performed within the title, subtitle, footnote and type. In addition, associated dimension values are also searched in. For example, if the country “Japan” is selected and the object contains the dimension City, the object will appear in the results for “Osaka” but not for “Johannesburg”. The generic objects with the following types will never appear in the results: slideitem, sheet, story, slide, masterobject, snapshot, LoadModel, appprops."
+    },
+    "qsocks.doc.searchResults": {
+        "prefix": "qsocks.doc.searchResults",
+        "body": [
+            "${1:doc}.searchResults(${2:qOptions}, ${3:qTerm}, ${4:qPage}).then(function(${5:results}) {\n\n});"
+        ],
+        "description": "Returns the search matches for one or more search terms."
+    },
+    "qsocks.doc.getMediaList": {
+        "prefix": "qsocks.doc.getMediaList (deprecated)",
+        "body": [
+            "${1:doc}.getMediaList(${2:Prop}).then(function(${3:mediaList}) {\n\n});"
+        ],
+        "description": "Lists the media files."
+    },
+    "qsocks.doc.createVariable": {
+        "prefix": "qsocks.doc.createVariable (deprecated)",
+        "body": [
+            "${1:doc}.createVariable(${2:Name}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Creates a variable."
+    },
+    "qsocks.doc.getVariable": {
+        "prefix": "qsocks.doc.getVariable (deprecated)",
+        "body": [
+            "${1:doc}.getVariable(${2:Name}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Gets the handle of a variable."
+    },
+    "qsocks.doc.removeVariable": {
+        "prefix": "qsocks.doc.removeVariable (deprecated)",
+        "body": [
+            "${1:doc}.removeVariable(${2:Name}).then(function(${3:variable}) {\n\n});"
+        ],
+        "description": "Removes a variable."
+    },
+    "qsocks.doc.searchAssociations": {
+        "prefix": "qsocks.doc.searchAssociations (deprecated)",
+        "body": [
+            "${1:doc}.searchAssociations(${2:Options}, ${3:Terms}, ${4:Page}).then(function(${5:associations}) {\n\n});"
+        ],
+        "description": "Returns the search matches for one or more search terms."
+    }
 }
