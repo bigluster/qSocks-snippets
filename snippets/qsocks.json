@@ -1643,5 +1643,390 @@
             "${1:doc}.searchAssociations(${2:Options}, ${3:Terms}, ${4:Page}).then(function(${5:associations}) {\n\n});"
         ],
         "description": "Returns the search matches for one or more search terms."
+    },
+    "qsocks.genericObject.exportData": {
+        "prefix": "qsocks.genericObject.exportData",
+        "body": [
+            "${1:genericObject}.exportData(${2:FileType}, ${3:Path}, ${4:FileName}, ${5:ExportState}).then(function(${6:exportData}) {\n\n});"
+        ],
+        "description": "Exports the data of any generic object to an Excel file or a open XML file."
+    },
+    "qsocks.genericObject.getEffectiveProperties": {
+        "prefix": "qsocks.genericObject.getEffectiveProperties",
+        "body": [
+            "${1:genericObject}.getEffectiveProperties().then(function(${2:properties}) {\n\n});"
+        ],
+        "description": "Returns the identifier, the type and the properties of  the object."
+    },
+    "qsocks.genericObject.getLayout": {
+        "prefix": "qsocks.genericObject.getLayout",
+        "body": [
+            "${1:genericObject}.getLayout().then(function(${2:layout}) {\n\n});"
+        ],
+        "description": "Evaluates an object and displays its properties including the dynamic properties."
+    },
+    "qsocks.genericObject.getListObjectData": {
+        "prefix": "qsocks.genericObject.getListObjectData",
+        "body": [
+            "${1:genericObject}.getListObjectData(${2:Path}, ${3:Pages}).then(function(${4:objectData}) {\n\n});"
+        ],
+        "description": "Retrieves the values of a list object."
+    },
+    "qsocks.genericObject.getHyperCubeAdaptiveGrid": {
+        "prefix": "qsocks.genericObject.getHyperCubeAdaptiveGrid",
+        "body": [
+            "${1:genericObject}.getHyperCubeAdaptiveGrid(${2:Path}, ${3:Pages}, ${4:DataRanges}, ${5:MaxNbrcells}, ${6:QueryLevel}).then(function(${7:hyperCubeAdaptiveGrid}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.genericObject.getHyperCubeBinnedData": {
+        "prefix": "qsocks.genericObject.getHyperCubeBinnedData",
+        "body": [
+            "${1:genericObject}.getHyperCubeBinnedData(${2:Path}, ${3:Pages}, ${4:Viewport}, ${5:DataRanges}, ${6:MaxNbrCells}, ${7:QueryLevel}, ${8:BinningMethod}, ).then(function(${9:hyperCubeBinnedData}) {\n\n});"
+        ],
+        "description": "This method supports data binning."
+    },
+    "qsocks.genericObject.getHyperCubeData": {
+        "prefix": "qsocks.genericObject.getHyperCubeData",
+        "body": [
+            "${1:genericObject}.getHyperCubeData(${2:Path}, ${3:Pages}).then(function(${4:hyperCubeData}) {\n\n});"
+        ],
+        "description": "Retrieves the values of a chart, a table, or a scatter plot. It is possible to retrieve specific pages of data."
+    },
+    "qsocks.genericObject.getHyperCubeReducedData": {
+        "prefix": "qsocks.genericObject.getHyperCubeReducedData",
+        "body": [
+            "${1:genericObject}.getHyperCubeReducedData(${2:Path}, ${3:Pages}, ${4:ZoomFactor}, ${5:ReductionMode}).then(function(${6:hyperCubeReducedData}) {\n\n});"
+        ],
+        "description": "Reduces the data of a bar chart, a line chart or a scatter plot chart and retrieves them."
+    },
+    "qsocks.genericObject.getHyperCubePivotData": {
+        "prefix": "qsocks.genericObject.getHyperCubePivotData",
+        "body": [
+            "${1:genericObject}.getHyperCubePivotData(${2:Path}, ${3:Pages}).then(function(${4:hyperCubePivotData}) {\n\n});"
+        ],
+        "description": "Retrieves the values of a pivot table. It is possible to retrieve specific pages of data."
+    },
+    "qsocks.genericObject.getHyperCubeStackData": {
+        "prefix": "qsocks.genericObject.getHyperCubeStackData",
+        "body": [
+            "${1:genericObject}.getHyperCubeStackData(${2:Path}, ${3:Pages}, ${4:MaxNbrCells}).then(function(${5:hyperCubeStackData}) {\n\n});"
+        ],
+        "description": "Retrieves the values of a stacked pivot table. It is possible to retrieve specific pages of data."
+    },
+    "qsocks.genericObject.applyPatches": {
+        "prefix": "qsocks.genericObject.applyPatches",
+        "body": [
+            "${1:genericObject}.applyPatches(${2:Patches}, ${3:SoftPatch}).then(function(${4:patches}) {\n\n});"
+        ],
+        "description": "Applies a patch to the properties of an object. Allows an update to some of the properties."
+    },
+    "qsocks.genericObject.clearSoftPatches": {
+        "prefix": "qsocks.genericObject.clearSoftPatches",
+        "body": [
+            "${1:genericObject}.clearSoftPatches().then(function(${2:patches}) {\n\n});"
+        ],
+        "description": "Clears the soft properties of a generic object."
+    },
+    "qsocks.genericObject.setProperties": {
+        "prefix": "qsocks.genericObject.setProperties",
+        "body": [
+            "${1:genericObject}.setProperties(${2:Prop}).then(function(${5:properties}) {\n\n});"
+        ],
+        "description": "Sets some properties for a generic object."
+    },
+    "qsocks.genericObject.getProperties": {
+        "prefix": "qsocks.genericObject.getProperties",
+        "body": [
+            "${1:genericObject}.getProperties().then(function(${2:properties}) {\n\n});"
+        ],
+        "description": "Returns the identifier, the type and the properties of  the object."
+    },
+    "qsocks.genericObject.setFullPropertyTree": {
+        "prefix": "qsocks.genericObject.setFullPropertyTree",
+        "body": [
+            "${1:genericObject}.setFullPropertyTree(${2:PropEntry}).then(function(${3:fullPropertyTree}) {\n\n});"
+        ],
+        "description": "Sets the properties"
+    },
+    "qsocks.genericObject.getFullPropertyTree": {
+        "prefix": "qsocks.genericObject.getFullPropertyTree",
+        "body": [
+            "${1:genericObject}.getFullPropertyTree().then(function(${2:propertyTree}) {\n\n});"
+        ],
+        "description": "Gets the properties"
+    },
+    "qsocks.genericObject.getInfo": {
+        "prefix": "qsocks.genericObject.getInfo",
+        "body": [
+            "${1:genericObject}.getInfo().then(function(${2:info}) {\n\n});"
+        ],
+        "description": "Returns the type and identifier of the object."
+    },
+    "qsocks.genericObject.clearSelections": {
+        "prefix": "qsocks.genericObject.clearSelections",
+        "body": [
+            "${1:genericObject}.clearSelections(${2:Path}, ${3:ColIndices}).then(function(${4:selections}) {\n\n});"
+        ],
+        "description": "Clears the selections in a dimension of a visualization."
+    },
+    "qsocks.genericObject.selectListObjectValues": {
+        "prefix": "qsocks.genericObject.selectListObjectValues",
+        "body": [
+            "${1:genericObject}.selectListObjectValues(${2:Path}, ${3:Values}, ${4:ToggleMode}, ${5:SoftLock}).then(function(${6:listObjectValues}) {\n\n});"
+        ],
+        "description": "Makes single selections in dimensions."
+    },
+    "qsocks.genericObject.selectListObjectPossible": {
+        "prefix": "qsocks.genericObject.selectListObjectPossible",
+        "body": [
+            "${1:genericObject}.selectListObjectPossible(${2:Path}, ${3:SoftLock}).then(function(${4:listObjectPossible}) {\n\n});"
+        ],
+        "description": "Selects all possible values of a list object."
+    },
+    "qsocks.genericObject.selectListObjectExcluded": {
+        "prefix": "qsocks.genericObject.selectListObjectExcluded",
+        "body": [
+            "${1:genericObject}.selectListObjectExcluded(${2:Path}, ${3:SoftLock}).then(function(${5:listObjectExcluded}) {\n\n});"
+        ],
+        "description": "Inverts the current selections  in a specific field."
+    },
+    "qsocks.genericObject.selectListObjectAlternative": {
+        "prefix": "qsocks.genericObject.selectListObjectAlternative",
+        "body": [
+            "${1:genericObject}.selectListObjectAlternative(${2:Path}, ${3:SoftLock}).then(function(${4:listObjectAlternative}) {\n\n});"
+        ],
+        "description": "Selects all alternative values in a specific field."
+    },
+    "qsocks.genericObject.selectListObjectAll": {
+        "prefix": "qsocks.genericObject.selectListObjectAll",
+        "body": [
+            "${1:genericObject}.selectListObjectAll(${2:Path}, ${3:SoftLock}).then(function(${5:listObjectAll}) {\n\n});"
+        ],
+        "description": "Selects all values of a field."
+    },
+    "qsocks.genericObject.searchListObjectFor": {
+        "prefix": "qsocks.genericObject.searchListObjectFor",
+        "body": [
+            "${1:genericObject}.searchListObjectFor()${2:Path}, ${3:Match}.then(function(${4:listObjectFor}) {\n\n});"
+        ],
+        "description": "Searches for a string in a list object."
+    },
+    "qsocks.genericObject.abortListObjectSearch": {
+        "prefix": "qsocks.genericObject.abortListObjectSearch",
+        "body": [
+            "${1:genericObject}.abortListObjectSearch(${2:Path}).then(function(${3:listObjectSearch}) {\n\n});"
+        ],
+        "description": "Aborts the results of a search in a list object."
+    },
+    "qsocks.genericObject.acceptListObjectSearch": {
+        "prefix": "qsocks.genericObject.acceptListObjectSearch",
+        "body": [
+            "${1:genericObject}.acceptListObjectSearch(${2:Path}, ${3:ToggleMode}, ${4:SoftLock}).then(function(${5:listObjectSearch}) {\n\n});"
+        ],
+        "description": "Accept the results of a search in a list object. The search results become selected in the field."
+    },
+    "qsocks.genericObject.expandLeft": {
+        "prefix": "qsocks.genericObject.expandLeft",
+        "body": [
+            "${1:genericObject}.expandLeft(${2:Path}, ${3:Row}, ${4:Col}, ${5:All}).then(function(${6:expandLeft}) {\n\n});"
+        ],
+        "description": "Expands the left dimensions of a pivot table.  This method applies only to pivot tables that are not always fully expanded."
+    },
+    "qsocks.genericObject.expandTop": {
+        "prefix": "qsocks.genericObject.expandTop",
+        "body": [
+            "${1:genericObject}.expandTop(${2:Path}, ${3:Row}, ${4:Col}, ${5:All}).then(function(${6:expandTop}) {\n\n});"
+        ],
+        "description": "Expands the top dimensions of a pivot table.  This method applies only to pivot tables that are not always fully expanded."
+    },
+    "qsocks.genericObject.collapseLeft": {
+        "prefix": "qsocks.genericObject.collapseLeft",
+        "body": [
+            "${1:genericObject}.collapseLeft(${2:Path}, ${3:Row}, ${4:Col}, ${5:All}).then(function(${6:collapseLeft}) {\n\n});"
+        ],
+        "description": "Collapses the left dimensions of a pivot table.  This method applies only to pivot tables that are not always fully expanded."
+    },
+    "qsocks.genericObject.collapseTop": {
+        "prefix": "qsocks.genericObject.collapseTop",
+        "body": [
+            "${1:genericObject}.collapseTop(${2:Path}, ${3:Row}, ${4:Col}, ${5:All}).then(function(${6:collapseTop}) {\n\n});"
+        ],
+        "description": "Collapses the top dimensions of a pivot table.  This method applies only to pivot tables that are not always fully expanded."
+    },
+    "qsocks.genericObject.drillUp": {
+        "prefix": "qsocks.genericObject.drillUp",
+        "body": [
+            "${1:genericObject}.drillUp(${2:Path}, ${3:DimNo}, ${4:NbrSteps}).then(function(${5:drillUp}) {\n\n});"
+        ],
+        "description": "You can use the drillUp method  with any object that contains a drill-down group as a dimension."
+    },
+    "qsocks.genericObject.lock": {
+        "prefix": "qsocks.genericObject.lock",
+        "body": [
+            "${1:genericObject}.lock(${2:Path}, ${3:ColIndices}).then(function(${5:lock}) {\n\n});"
+        ],
+        "description": "Locks the selected values of a generic object."
+    },
+    "qsocks.genericObject.unlock": {
+        "prefix": "qsocks.genericObject.unlock",
+        "body": [
+            "${1:genericObject}.unlock(${2:Path}, ${3:ColIndices}).then(function(${4:unlock}) {\n\n});"
+        ],
+        "description": "Unlocks the selected values of a generic object if the target (or handle ) is a generic object"
+    },
+    "qsocks.genericObject.selectHyperCubeValues": {
+        "prefix": "qsocks.genericObject.selectHyperCubeValues",
+        "body": [
+            "${1:genericObject}.selectHyperCubeValues(${2:Path}, ${3:DimNo}, ${4:Values}, ${5:ToggleMode}).then(function(${6:hyperCubeValues}) {\n\n});"
+        ],
+        "description": "Selects some values in one dimension."
+    },
+    "qsocks.genericObject.selectHyperCubeCells": {
+        "prefix": "qsocks.genericObject.selectHyperCubeCells",
+        "body": [
+            "${1:genericObject}.selectHyperCubeCells(${2:Path}, ${3:RowIndices}, ${4:ColIndices}, ${5:SoftLock}, ${6:DeselectOnlyOneSelected}).then(function(${7:hyperCubeCells}) {\n\n});"
+        ],
+        "description": "Makes selections in multiple dimensions and measures."
+    },
+    "qsocks.genericObject.selectPivotCells": {
+        "prefix": "qsocks.genericObject.selectPivotCells",
+        "body": [
+            "${1:genericObject}.selectPivotCells(${2:Path}, ${3:Selections}, ${4:SoftLock}, ${5:DeselectOnlyOneSelected}).then(function(${6:pivotCells}) {\n\n});"
+        ],
+        "description": "This method only applies to hypercubes that are not represented as straight tables. The parameter qMode in HyperCubeDef must be set either to P or K."
+    },
+    "qsocks.genericObject.rangeSelectHyperCubeValues": {
+        "prefix": "qsocks.genericObject.rangeSelectHyperCubeValues",
+        "body": [
+            "${1:genericObject}.rangeSelectHyperCubeValues(${2:Path}, ${3:Ranges}, ${4:OrMode}, ${5:DeselectOnlyOneSelected}).then(function(${6:selectHyperCubeValues}) {\n\n});"
+        ],
+        "description": "Make range selections in measures."
+    },
+    "qsocks.genericObject.getChild": {
+        "prefix": "qsocks.genericObject.getChild",
+        "body": [
+            "${1:genericObject}.getChild(${2:Id}).then(function(${3:child}) {\n\n});"
+        ],
+        "description": "Returns the type of the object and the corresponding handle."
+    },
+    "qsocks.genericObject.getChildInfos": {
+        "prefix": "qsocks.genericObject.getChildInfos",
+        "body": [
+            "${1:genericObject}.getChildInfos().then(function(${2:childInfos}) {\n\n});"
+        ],
+        "description": "Returns the identifier and the type for each child in an app object. If the child contains extra properties in qInfos,these properties are returned."
+    },
+    "qsocks.genericObject.createChild": {
+        "prefix": "qsocks.genericObject.createChild",
+        "body": [
+            "${1:genericObject}.createChild(${2:Prop}, ${3:PropForThis}).then(function(${4:child}) {\n\n});"
+        ],
+        "description": "Creates a generic object that is a child of another generic object."
+    },
+    "qsocks.genericObject.destroyChild": {
+        "prefix": "qsocks.genericObject.destroyChild",
+        "body": [
+            "${1:genericObject}.destroyChild(${2:ID}, ${3:PropForThis}).then(function(${4:child}) {\n\n});"
+        ],
+        "description": "Removes a child object."
+    },
+    "qsocks.genericObject.destroyAllChildren": {
+        "prefix": "qsocks.genericObject.destroyAllChildren",
+        "body": [
+            "${1:genericObject}.destroyAllChildren(${2:PropForThis}).then(function(${3:allChildren}) {\n\n});"
+        ],
+        "description": "Removes all children and all children to the children on an object."
+    },
+    "qsocks.genericObject.setChildArrayOrder": {
+        "prefix": "qsocks.genericObject.setChildArrayOrder",
+        "body": [
+            "${1:genericObject}.setChildArrayOrder(${2:Ids}).then(function(${3:childArrayOrder}) {\n\n});"
+        ],
+        "description": "Sets the order of the children in a generic object."
+    },
+    "qsocks.genericObject.getLinkedObjects": {
+        "prefix": "qsocks.genericObject.getLinkedObjects",
+        "body": [
+            "${1:genericObject}.getLinkedObjects().then(function(${2:linkedObjects}) {\n\n});"
+        ],
+        "description": "Lists the linked objects to a generic object, a dimension or a measure."
+    },
+    "qsocks.genericObject.copyFrom": {
+        "prefix": "qsocks.genericObject.copyFrom",
+        "body": [
+            "${1:genericObject}.copyFrom(${2:FromId}).then(function(${3:copyFrom}) {\n\n});"
+        ],
+        "description": "Copies the properties of a generic object and its children.The source object is specified by the parameter qFromId and the destination object is referenced by its handle. The identifier of the destination object is the same as before the copy takes place."
+    },
+    "qsocks.genericObject.beginSelections": {
+        "prefix": "qsocks.genericObject.beginSelections",
+        "body": [
+            "${1:genericObject}.beginSelections(${2:Path}).then(function(${3:selections}) {\n\n});"
+        ],
+        "description": "Begins the selection mode. The app enters the modal state. The specified object enters the selection mode and a modal window is opened. The selection mode can apply to only one object in an app at a time."
+    },
+    "qsocks.genericObject.endSelections": {
+        "prefix": "qsocks.genericObject.endSelections",
+        "body": [
+            "${1:genericObject}.endSelections(${2:Accept}).then(function(${5:selections}) {\n\n});"
+        ],
+        "description": "nds the selection mode on a visualization. The selections are accepted or aborted when exiting the selection mode, depending on the qAccept parameter value."
+    },
+    "qsocks.genericObject.resetMadeSelections": {
+        "prefix": "qsocks.genericObject.resetMadeSelections",
+        "body": [
+            "${1:genericObject}.resetMadeSelections().then(function(${2:selections}) {\n\n});"
+        ],
+        "description": "Resets all selections made in selection mode."
+    },
+    "qsocks.genericObject.embedSnapshotObject": {
+        "prefix": "qsocks.genericObject.embedSnapshotObject",
+        "body": [
+            "${1:genericObject}.embedSnapshotObject(${2:Id}).then(function(${3:snapshotObject}) {\n\n});"
+        ],
+        "description": "Adds a snapshot to a generic object."
+    },
+    "qsocks.genericObject.getSnapshotObject": {
+        "prefix": "qsocks.genericObject.getSnapshotObject",
+        "body": [
+            "${1:genericObject}.getSnapshotObject().then(function(${2:snapshotObject}) {\n\n});"
+        ],
+        "description": "Returns the type of the object and the corresponding handle."
+    },
+    "qsocks.genericObject.publish": {
+        "prefix": "qsocks.genericObject.publish",
+        "body": [
+            "${1:genericObject}.publish().then(function(${2:publish}) {\n\n});"
+        ],
+        "description": "Publishes a generic object."
+    },
+    "qsocks.genericObject.unPublish": {
+        "prefix": "qsocks.genericObject.unPublish",
+        "body": [
+            "${1:genericObject}.unPublish().then(function(${2:unPublish}) {\n\n});"
+        ],
+        "description": "Unpublishes a generic object."
+    },
+    "qsocks.genericObject.getHyperCubeContinuousData": {
+        "prefix": "qsocks.genericObject.getHyperCubeContinuousData",
+        "body": [
+            "${1:genericObject}.getHyperCubeContinuousData(${2:qPath}, ${3:qOptions}).then(function(${4:hyperCubeContinuousData}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.genericObject.selectListObjectContinuousRange": {
+        "prefix": "qsocks.genericObject.selectListObjectContinuousRange",
+        "body": [
+            "${1:genericObject}.selectListObjectContinuousRange(${2:qPath}, ${3:qRanges}, ${4:qSoftLock}).then(function(${5:listObjectContinuousRange}) {\n\n});"
+        ],
+        "description": ""
+    },
+    "qsocks.genericObject.selectHyperCubeContinuousRange": {
+        "prefix": "qsocks.genericObject.selectHyperCubeContinuousRange",
+        "body": [
+            "${1:genericObject}.selectHyperCubeContinuousRange(${2:qPath}, ${3:qRanges}, ${4:qSoftLock}).then(function(${5:hyperCubeContinousRange}) {\n\n});"
+        ],
+        "description": ""
     }
 }

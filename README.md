@@ -6,7 +6,7 @@ VS Code extension that will add [qSocks](https://github.com/mindspank/qsocks) ("
 
 The extension is at the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stefanstoichev.qsockssnippet) 
 
-At the moment the following methods are avaialble:
+Following methods are avaialble:
 
  * main (config and connection)
  * doc
@@ -15,7 +15,6 @@ At the moment the following methods are avaialble:
  * generic Bookmark
  * generic Dimension
  * generic Measure
- * generic Variable  
-
-What is left:
  * generic Object
+ * generic Variable
+
